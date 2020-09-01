@@ -1,2 +1,5 @@
 # Frontend web development challenges
-Challenges feature HTML5, CSS3 and JavaScript and most of them can be found on the FrontEnd Mentor wwebsite.
+Challenges feature HTML5, CSS3 and JavaScript and most of them can be found on the FrontEnd Mentor website.
+
+###
+Will add a website soon
