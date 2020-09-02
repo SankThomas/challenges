@@ -8,30 +8,22 @@ ul {
   list-style-type: none;
 }
 
-body {
-  background: url('https://images.pexels.com/photos/785418/pexels-photo-785418.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
-    no-repeat center top/cover;
-}
-
 .overlay {
-  background-color: rgba(0, 18, 53, 0.8);
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  background-color: rgba(1, 43, 128, 0.8);
 }
 
 img {
   width: 400px;
   height: 300px;
+  border-radius: 10px;
 }
 
 ul {
-  max-width: 800px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 10px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -48,4 +40,21 @@ ul li a {
   color: #fff;
   font-size: 20px;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  img {
+    width: 300px;
+    height: 200px;
+  }
+
+  ul li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  ul {
+    flex-direction: column;
+  }
 }
