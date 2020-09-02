@@ -44,6 +44,7 @@ p {
 body {
   font-family: 'Be Vietnam', sans-serif;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 .menu-bar {
@@ -286,7 +287,7 @@ body {
 }
 
 .attribution {
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
   padding: 10px 0;
 }
@@ -390,11 +391,14 @@ body {
 }
 
 @media (max-width: 768px) {
-  .menu-bar {
+  /* .menu-bar {
     display: block;
     position: absolute;
     top: 8%;
     right: 3%;
+  } */
+  body {
+    overflow-x: hidden;
   }
 
   .header .logo {
@@ -429,6 +433,16 @@ body {
   }
 
   .showcase p {
-    padding: 10px 10px 20px;
+    padding: 10px 30px;
+  }
+
+  .theme-color img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 372px) {
+  .footer .footer-inner .form-footer input {
+    padding-right: 5px;
   }
 }
