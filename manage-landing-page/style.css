@@ -44,7 +44,6 @@ p {
 body {
   font-family: 'Be Vietnam', sans-serif;
   overflow-x: hidden;
-  width: 100vw;
 }
 
 .menu-bar {
@@ -54,7 +53,7 @@ body {
 .svg {
   position: absolute;
   top: -30%;
-  right: -7%;
+  right: 7%;
   z-index: -1;
 }
 
@@ -324,6 +323,7 @@ body {
   }
 
   .section-2 .manage {
+    width: 320px;
     margin: auto;
     text-align: center;
   }
@@ -390,15 +390,21 @@ body {
   }
 }
 
+/* 768px */
 @media (max-width: 768px) {
-  /* .menu-bar {
+  .menu-bar {
     display: block;
     position: absolute;
-    top: 8%;
-    right: 3%;
-  } */
+    top: 4%;
+    right: 5%;
+  }
+
   body {
     overflow-x: hidden;
+  }
+
+  .header {
+    justify-content: space-between;
   }
 
   .header .logo {
@@ -406,18 +412,23 @@ body {
   }
 
   .header .main-navbar ul {
-    display: none;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: -470px;
+    width: 400px;
     background-color: #fff;
     padding: 20px;
     width: 90vw;
-    line-height: 2.5;
+    line-height: 3;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
   }
 
-  .header .main-navbar ul .show {
-    display: block;
+  .header .main-navbar .list {
+    display: none;
+    text-align: center;
   }
 
   .header .theme-btn {
@@ -426,6 +437,8 @@ body {
 
   .showcase h1 {
     font-size: 36px;
+    width: 300px;
+    margin: auto;
   }
 
   .showcase img {
@@ -433,7 +446,15 @@ body {
   }
 
   .showcase p {
-    padding: 10px 30px;
+    width: 300px;
+  }
+
+  .section-2 h4 {
+    font-size: 16px;
+  }
+
+  .section-2 p {
+    font-size: 14px;
   }
 
   .theme-color img {
@@ -441,6 +462,7 @@ body {
   }
 }
 
+/* 372px */
 @media (max-width: 372px) {
   .footer .footer-inner .form-footer input {
     padding-right: 5px;

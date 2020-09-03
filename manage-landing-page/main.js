@@ -1,10 +1,10 @@
-const menuBar = document.querySelector('.menu-bar')
-const navBar = document.querySelector('.main-navbar')
+const navBar = document.getElementById('mainList')
+const menuBar = document.getElementById('menuBar')
 
-menuBar.addEventListener('click', openMenu)
-
-function openMenu() {
-  if (menuBar) {
-    navBar.classList.toggle('show')
+menuBar.addEventListener('click', (openMenu) => {
+  if (navBar.style.display === 'block') {
+    navBar.style.display = 'none'
+  } else {
+    navBar.style.display = 'block'
   }
-}
+})
