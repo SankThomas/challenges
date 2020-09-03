@@ -343,6 +343,7 @@ body {
     margin-top: 35px;
   }
 
+  /* TODO: Remove this and add slider */
   .section-3 .testimonials > div:first-child,
   .section-3 .testimonials div:nth-child(3),
   .section-3 .testimonials div:nth-child(4) {
@@ -465,6 +466,15 @@ body {
 /* 372px */
 @media (max-width: 372px) {
   .footer .footer-inner .form-footer input {
-    padding-right: 5px;
+    padding: 7px;
+    margin-left: -10px;
   }
+
+  .footer .footer-inner .form-footer button {
+    margin-left: 0;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 352px) {
 }
