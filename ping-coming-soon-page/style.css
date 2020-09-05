@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.header-img {
+  margin: 50px 0 30px;
+}
+
+.header {
+  margin: 0 0 50px;
+}
+
+.header h1 {
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 10px;
+}
+
+.header h3 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.header h1 span {
+  font-weight: 700;
+  color: #111;
+}
+
+.header .email {
+  display: flex;
+}
+
+.header .email input {
+  color: hsl(223, 87%, 63%);
+  width: 300px;
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid hsl(223, 100%, 88%);
+  margin-right: 10px;
+  padding: 13px;
+}
+
+.header .email input::placeholder {
+  font-family: inherit;
+  color: hsl(223, 100%, 88%);
+  margin-left: 20px;
+}
+
+.header .email small {
+  display: none;
+  font-size: 12px;
+  color: red;
+}
+
+.header .email .btn {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  background: hsl(223, 87%, 63%);
+  color: #fff;
+  padding: 13px 40px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.hero {
+  margin-bottom: 50px;
+}
+
+.hero img {
+  width: 450px;
+}
+
+.social ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 30px;
+}
+
+.social ul li {
+  margin: 0 20px;
+  color: hsl(223, 87%, 63%);
+  cursor: pointer;
+}
+
+.copyright {
+  font-size: 14px;
+  color: hsl(0, 0%, 59%);
+}
+
+.attribution {
+  margin: 20px 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 500px) {
+  .header-img img {
+    width: 70px;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+
+  .header h3 {
+    font-size: 14px;
+  }
+
+  .header .email {
+    flex-direction: column;
+  }
+
+  .header .email .btn {
+    width: 300px;
+    margin-top: 20px;
+    margin-left: -10px;
+  }
+
+  .hero img {
+    width: 350px;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <title>Frontend Mentor | Project Tracking Intro Component</title>
+  </head>
+
+  <body>
+    <!-- Show only on device widths less than 768px -->
+    <!-- Close icon will be put in using JavaScript -->
+    <div class="menu-button">
+      <img src="./images/icon-hamburger.svg" alt="" />
+    </div>
+
+    <!-- Background-svg image -->
+    <div class="background"></div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <a href="index.html"><img src="./images/logo.svg" alt="logo" /></a>
+      </div>
+
+      <div class="main-list nav">
+        <ul class="list">
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li class="icon">
+            <a href="#"><i class="fas fa-circle"></i></a>
+          </li>
+          <div class="line"></div>
+          <li class="login"><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Showcase -->
+    <section class="showcase">
+      <div class="left">
+        <h3><span>New</span> Monograph Dashboard</h3>
+        <h1>Powerful insights into your team</h1>
+        <p>Project planning and time tracking for agile teams</p>
+
+        <div class="span">
+          <button class="btn" name="button">Schedule a demo</button>
+          <p>To see a live preview</p>
+        </div>
+      </div>
+
+      <!-- Position this absolute to the right -10% -->
+      <div class="right">
+        <img src="./images/illustration-devices.svg" alt="illustration" />
+      </div>
+    </section>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/SankThomas/challenges" target="_blank"
+          >Thomas Sankara</a
+        >.
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
