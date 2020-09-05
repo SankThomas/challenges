@@ -16,10 +16,6 @@ body {
     no-repeat center bottom/cover;
 }
 
-.overlay {
-  /* background-color: rgba(1, 43, 128, 0.8); */
-}
-
 .overlay h1 {
   font-weight: 400;
   text-align: center;
