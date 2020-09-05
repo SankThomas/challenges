@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,13 +10,26 @@ ul {
   list-style-type: none;
 }
 
+body {
+  font-family: "Be Vietnam", sans-serif;
+  background: url("https://images.pexels.com/photos/4100130/pexels-photo-4100130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    no-repeat center bottom/cover;
+}
+
 .overlay {
-  background-color: rgba(1, 43, 128, 0.8);
+  /* background-color: rgba(1, 43, 128, 0.8); */
+}
+
+.overlay h1 {
+  font-weight: 400;
+  text-align: center;
+  padding-top: 20px;
+  color: #fff;
 }
 
 img {
-  width: 400px;
-  height: 300px;
+  width: 350px;
+  height: 250px;
   border-radius: 10px;
 }
 
@@ -30,15 +45,14 @@ ul {
 }
 
 ul li {
-  padding: 10px 0;
-  margin: 0 10px;
+  margin: 0 20px;
   text-align: center;
-  border-bottom: 2px solid #fff;
+  padding: 10px 0;
 }
 
 ul li a {
   color: #fff;
-  font-size: 20px;
+  font-size: 17px;
   text-decoration: none;
 }
 
