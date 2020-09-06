@@ -789,7 +789,7 @@ body {
   }
 }
 
-@media (min-width: 345px) and (max-width: 400px) {
+@media (min-width: 345px) and (max-width: 499px) {
   .menu-btn {
     right: 7%;
   }
@@ -813,19 +813,19 @@ body {
   }
 
   .hero .right h1 {
-    font-size: 30px;
+    font-size: 26px;
     width: 280px;
-    margin: 30px auto;
+    margin: 30px auto 30px 50px;
   }
 
   .hero .right p {
     width: 280px;
-    margin: 0 auto 30px;
+    margin: 0 auto 30px 50px;
   }
 
   .hero .right .btns {
     width: 350px;
-    margin: auto;
+    margin: 0 auto 0 10px;
   }
 
   .hero .left img {
