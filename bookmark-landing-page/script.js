@@ -1,7 +1,12 @@
 /*
+MENU BUTTON
+1. Get the menu button
+2. Get the close button
+3. Get the navbar
+4. When you click the menu button, open the navbar, and show the close button
+5. When you click the close button, close the navbar and show the menu button
+
 Features
-
-
 
 FAQs
 1. Get the arrow image
@@ -9,6 +14,35 @@ FAQs
 3. Add a click event to the arrow to show the answer when it is clicked
 
 */
+
+const menuButton = document.querySelector(".menu-btn")
+const closeButton = document.querySelector(".close")
+const navbar = document.querySelector("nav")
+
+menuButton.addEventListener("click", showNav)
+closeButton.addEventListener("click", closeNav)
+
+function showNav() {
+  if (navbar.style.display === "block") {
+    navbar.style.display = "none"
+  } else {
+    navbar.style.display = "block"
+  }
+}
+
+// Show close button when navbar is open
+function showClose() {
+  if (navbar.style.display === "block") {
+    closeButton.style.display = "block"
+  } else {
+    closeButton.style.display = "none"
+  }
+}
+
+// Close navbar
+function closeNav() {
+  navbar.style.display = "none"
+}
 
 // Get current class
 const listItems = document.querySelectorAll(".list-item")
