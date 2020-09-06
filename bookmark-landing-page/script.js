@@ -14,8 +14,6 @@ FAQs
 const listItems = document.querySelectorAll(".list-item")
 const current = document.querySelector(".current")
 
-listItems.addEventListener("click", showCurrent)
-
 function showCurrent() {
   if (current.style.display === "block") {
     listItems.style.color = "hsl(0, 94%, 66%)"
