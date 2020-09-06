@@ -789,7 +789,7 @@ body {
   }
 }
 
-@media (min-width: 345px) and (max-width: 375px) {
+@media (min-width: 345px) and (max-width: 400px) {
   .menu-btn {
     right: 7%;
   }
@@ -807,24 +807,25 @@ body {
 
   .background-svg2 {
     margin-top: -150px;
-    margin-left: -220px;
+    margin-left: -150px;
     padding: 80px;
-    border-radius: 100px;
+    border-bottom-right-radius: 80px;
   }
 
   .hero .right h1 {
     font-size: 30px;
     width: 280px;
-    margin-left: 30px;
+    margin: 30px auto;
   }
 
   .hero .right p {
     width: 280px;
-    margin-left: 30px;
+    margin: 0 auto 30px;
   }
 
   .hero .right .btns {
     width: 350px;
+    margin: auto;
   }
 
   .hero .left img {
