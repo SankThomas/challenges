@@ -22,11 +22,11 @@
   </head>
   <body>
     <div class="container">
-      <h2
+      <!-- <h2
         style="font-size: 30px; text-align: center; color: hsl(229, 31%, 21%)"
       >
         Work In Progress
-      </h2>
+      </h2> -->
       <header class="header">
         <div class="logo">
           <img src="./images/logo-bookmark.svg" alt="bookmark logo" />
@@ -57,14 +57,14 @@
 
         <div class="left">
           <img src="./images/illustration-hero.svg" alt="" />
-          <div class="background-svg1"></div>
+          <div class="background background-svg1"></div>
         </div>
       </section>
 
       <!-- Features -->
-      <section class="features">
+      <section class="features" id="feature">
         <h2>Features</h2>
-        <p>
+        <p class="desc">
           Our aim is to make it quick and easy for you to access your favourite
           websites. Your bookmarks sync between your devices so you can access
           them on the go.
@@ -72,9 +72,9 @@
 
         <div class="top-nav">
           <ul>
-            <li><a href="#">Simple Bookmarking</a></li>
-            <li><a href="#">Speedy Searching</a></li>
-            <li><a href="#">Easy Sharing</a></li>
+            <li class="list-item"><a href="#feature">Simple Bookmarking</a></li>
+            <li class="list-item"><a href="#feature">Speedy Searching</a></li>
+            <li class="list-item"><a href="#feature">Easy Sharing</a></li>
           </ul>
         </div>
 
@@ -82,12 +82,12 @@
         <div class="bookmark">
           <div>
             <img src="./images/illustration-features-tab-1.svg" alt="" />
-            <div class="background-svg2"></div>
+            <div class="background background-svg2"></div>
           </div>
 
           <div>
             <div class="slides current">
-              <h2>Bookmark in one click</h2>
+              <h3>Bookmark in one click</h3>
               <p>
                 Organize your bookmarks however you like. Our simple
                 drag-and-drop interface gives you complete control over how you
@@ -97,7 +97,7 @@
             </div>
 
             <div class="slides">
-              <h2>Intelligent search</h2>
+              <h3>Intelligent search</h3>
               <p>
                 Our powerful search feature will help you find saved sites in no
                 time at all. No need to trawl through all of your bookmarks.
@@ -106,7 +106,7 @@
             </div>
 
             <div class="slides">
-              <h2>Share your bookmarks</h2>
+              <h3>Share your bookmarks</h3>
               <p>
                 Easily share your bookmarks and collections with others. Create
                 a shareable link that you can send at the click of a button.
@@ -120,7 +120,7 @@
       <!-- Section-3 -->
       <section class="section-3">
         <h3>Download the extension</h3>
-        <p>
+        <p class="desc">
           We’ve got more browsers in the pipeline. Please do let us know if
           you’ve got a favourite you’d like us to prioritize.
         </p>
@@ -128,6 +128,7 @@
         <div class="browser-icons">
           <div>
             <img src="./images/logo-chrome.svg" alt="google chrome logo" />
+            <h4>Add to Chrome</h4>
             <p>Minimum version 62</p>
             <button class="btn btn-dark" name="button">
               Add & Install Extension
@@ -136,6 +137,7 @@
 
           <div>
             <img src="./images/logo-firefox.svg" alt="firefox logo" />
+            <h4>Add to Firefox</h4>
             <p>Minimum version 55</p>
             <button class="btn btn-dark" name="button">
               Add & Install Extension
@@ -144,6 +146,7 @@
 
           <div>
             <img src="./images/logo-opera.svg" alt="opera logo" />
+            <h4>Add to Opera</h4>
             <p>Minimum version 46</p>
             <button class="btn btn-dark" name="button">
               Add & Install Extension
@@ -160,87 +163,137 @@
           answered please feel free to email us.
         </p>
 
-        <ul>
-          <!-- Question-1 -->
-          <li class="question-1">What is Bookmark?</li>
-          <li class="answer-1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
-            quis quam ornare mattis.
-          </li>
+        <div class="question">
+          <h4
+            class="question-1"
+            style="border-top: 1px solid hsl(229, 8%, 60%)"
+          >
+            What is Bookmark?
+            <img
+              src="./images/icon-arrow.svg"
+              alt="arrow icon"
+              class="show-one"
+            />
+          </h4>
+          <ul>
+            <!-- Question-1 -->
+            <li class="answer answer-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+              quis quam ornare mattis.
+            </li>
+          </ul>
+        </div>
 
+        <div class="question">
           <!-- Question 2 -->
-          <li class="question-2">How can I request a new browser?</li>
-          <li class="answer-2">
-            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
-            aliquet convallis ultricies. Mauris augue massa, ultricies non
-            ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
-            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
-            imperdiet.
-          </li>
+          <h4 class="question-2">
+            How can I request a new browser?
+            <img
+              src="./images/icon-arrow.svg"
+              alt="arrow icon"
+              class="show-two"
+            />
+          </h4>
 
+          <ul>
+            <li class="answer answer-2">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+              massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus
+              eros aliquet convallis ultricies. Mauris augue massa, ultricies
+              non ligula. Suspendisse imperdie tVivamus luctus eros aliquet
+              convallis ultricies. Mauris augue massa, ultricies non ligula.
+              Suspendisse imperdiet.
+            </li>
+          </ul>
+        </div>
+
+        <div class="question">
           <!-- Question-3 -->
-          <li class="question-3">Is there a mobile app?</li>
-          <li class="answer-3">
-            Sed consectetur quam id neque fermentum accumsan. Praesent luctus
-            vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula
-            quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin
-            ex et ultricies bibendum.
-          </li>
+          <h4 class="question-3">
+            Is there a mobile app?
+            <img
+              src="./images/icon-arrow.svg"
+              alt="arrow icon"
+              class="show-three"
+            />
+          </h4>
+          <ul>
+            <li class="answer answer-3">
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+              vestibulum dolor, ut condimentum urna vulputate eget. Cras in
+              ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.
+            </li>
+          </ul>
+        </div>
 
+        <div class="question">
           <!-- Question-4 -->
-          <li class="question-4">What about other Chromium browsers?</li>
-          <li class="answer-4">
-            Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
-            mi, at euismod dui. Aliquam vitae neque eget nisl gravida
-            pellentesque non ut velit.
-          </li>
-        </ul>
+          <h4 class="question-4">
+            What about other Chromium browsers?
+            <img
+              src="./images/icon-arrow.svg"
+              alt="arrow icon"
+              class="show-four"
+            />
+          </h4>
+          <ul>
+            <li class="answer answer-4">
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in
+              placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+              pellentesque non ut velit.
+            </li>
+          </ul>
+        </div>
 
         <div>
           <button class="btn btn-dark" name="button">More Info</button>
         </div>
       </section>
-
-      <!-- Theme color section -->
-      <section class="theme-color">
-        <h4>35,000+ already joined</h4>
-
-        <h2>Stay up-to-date with what we’re doing</h2>
-
-        <form class="form-control">
-          <input type="email" placeholder="Enter your email address" required />
-          <input
-            type="submit"
-            name="submit button"
-            class="theme-btn"
-            value="Contact Us"
-          />
-        </form>
-      </section>
-
-      <!-- Footer -->
-      <footer class="footer">
-        <div class="footer-inner">
-          <div>
-            <img src="./images/logo-bookmark.svg" alt="" />
-            <ul>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="icons">
-            <ul>
-              <li><i class="fas fa-facebook"></i></li>
-              <li><i class="fas fa-twitter"></i></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
     </div>
+
+    <!-- Theme color section -->
+    <section class="theme-color">
+      <h4>35,000+ already joined</h4>
+
+      <h2>Stay up-to-date with what we’re doing</h2>
+
+      <form class="form-control">
+        <input type="email" placeholder="Enter your email address" required />
+        <input
+          type="submit"
+          name="submit button"
+          class="theme-btn"
+          value="Contact Us"
+        />
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>
+          <div>
+            <img src="./images/logo-bookmark.svg" alt="bookmark logo" />
+          </div>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="icons">
+          <ul>
+            <li>
+              <img src="./images/icon-facebook.svg" alt="facebook logo" />
+            </li>
+            <li><img src="./images/icon-twitter.svg" alt="twitter logo" /></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <footer>
       <p class="attribution">
@@ -248,8 +301,12 @@
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by
-        <a href="https://github.com/SankThomas/challenges">Thomas Sankara</a>.
+        <a href="https://github.com/SankThomas/challenges" target="_blank"
+          >Thomas Sankara</a
+        >.
       </p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
