@@ -1,6 +1,181 @@
-.attribution {
-  font-size: 11px;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-dark {
+  font-weight: 700;
+  background-color: hsl(231, 69%, 60%);
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  box-shadow: 0 5px 10px hsl(231, 69%, 60%, 0.3);
+}
+
+.btn-light {
+  font-weight: 700;
+  background-color: rgb(243, 243, 243);
+  color: rgb(68, 68, 68);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  box-shadow: 0 5px 10px hsl(231, 69%, 60%, 0.3);
+}
+
+/* .background-svg1 {
+  position: absolute;
+  background: hsl(231, 69%, 60%);
+  padding: 100px;
+} */
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0 50px;
+}
+
+.header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header nav ul li {
+  margin: 0 20px;
+  text-transform: uppercase;
+}
+
+.header nav ul li a {
+  font-size: 14px;
+  color: hsl(229, 31%, 21%);
+}
+
+.header nav ul > li:last-child a {
+  background: hsl(0, 94%, 66%);
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 50px 0;
+}
+
+.hero .right {
+  position: relative;
+  transform: translateY(10%);
+}
+
+.hero .right h1 {
+  font-size: 44px;
+  font-weight: 500;
+  color: hsl(229, 31%, 21%);
+  margin-bottom: 20px;
+}
+
+.hero .right p {
+  color: hsl(229, 8%, 60%);
+  width: 450px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.hero .right .btn {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.hero .left img {
+  width: 500px;
+}
+
+/* Features */
+.features {
+  margin: 50px 0;
+}
+
+.features h2 {
+  font-size: 26px;
+  font-weight: 500;
+  color: hsl(229, 31%, 21%);
   text-align: center;
+  margin-bottom: 15px;
+}
+
+.features p {
+  color: hsl(229, 8%, 60%);
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.features .top-nav {
+  margin: 80px 0;
+}
+
+.features .top-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features .top-nav ul li {
+  margin: 0 20px;
+  border-bottom: 1px solid hsl(229, 8%, 60%);
+  padding-bottom: 20px;
+}
+
+.features .top-nav ul li a {
+  font-size: 14px;
+  color: hsl(229, 31%, 21%);
+}
+
+.features .bookmark {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.features .bookmark .slides {
+  display: none;
+}
+
+.features .bookmark .slides.current {
+  display: block;
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  margin: 20px 0;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
