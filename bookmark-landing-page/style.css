@@ -474,31 +474,7 @@ body {
 }
 
 /* Media queries */
-@media (min-width: 1201px) and (max-width: 1400px) {
-  .background-svg1 {
-    right: -30%;
-  }
-
-  .background-svg2 {
-    left: -30%;
-  }
-}
-
-@media (min-width: 901px) and (max-width: 1200px) {
-  .background-svg1 {
-    right: -50%;
-  }
-
-  .background-svg2 {
-    left: -50%;
-  }
-
-  .hero .right {
-    margin-right: 20px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 900px) {
+@media (max-width: 768px) {
   .background-svg1 {
     position: relative;
     right: -40%;
@@ -632,7 +608,7 @@ body {
   }
 }
 
-@media (min-width: 500px) and (max-width: 766px) {
+@media (max-width: 500px) and (max-width: 766px) {
   .background-svg1 {
     position: relative;
     padding: 100px;
@@ -640,8 +616,8 @@ body {
   }
 
   .background-svg2 {
-    position: absolute;
-    left: -70%;
+    position: relative;
+    left: -100%;
   }
 
   .hero {
