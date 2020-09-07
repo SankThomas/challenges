@@ -93,6 +93,10 @@ body {
   font-weight: 600;
 }
 
+.left .form input:focus {
+  border: 1px solid #111;
+}
+
 .left .form input[type="submit"] {
   font-size: 15px;
   background: hsl(154, 59%, 51%);
@@ -133,7 +137,13 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+  .container {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 900px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -145,8 +155,8 @@ body {
   }
 
   .right h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 36px;
+    margin: 60px auto 20px;
   }
 
   .left {
@@ -159,7 +169,7 @@ body {
   }
 }
 
-@media (max-width: 340px) and (max-width: 500px) {
+@media (max-width: 600px) {
   .right {
     width: 350px;
   }
@@ -182,5 +192,34 @@ body {
 
   .left .form input {
     width: 300px;
+  }
+}
+
+@media (max-width: 365px) {
+  .right h1 {
+    font-size: 24px;
+  }
+
+  .left h3 {
+    width: 300px;
+  }
+
+  .left .form {
+    width: 300px;
+  }
+
+  .left .form input {
+    padding: 15px;
+    width: 250px;
+  }
+
+  .left .form input[type="submit"] {
+    font-size: 14px;
+    padding: 13px;
+  }
+
+  .left .form p {
+    width: 250px;
+    margin: -35px auto 0;
   }
 }
