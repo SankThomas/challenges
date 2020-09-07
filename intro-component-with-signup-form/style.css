@@ -196,6 +196,10 @@ body {
 }
 
 @media (max-width: 365px) {
+  .right {
+    width: 300px;
+  }
+
   .right h1 {
     font-size: 24px;
   }
