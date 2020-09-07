@@ -12,8 +12,12 @@ ul {
 
 body {
   font-family: "Be Vietnam", sans-serif;
-  background: url("https://images.pexels.com/photos/4100130/pexels-photo-4100130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+  background: url("https://images.pexels.com/photos/1421264/pexels-photo-1421264.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
     no-repeat center bottom/cover;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .overlay h1 {
@@ -27,6 +31,12 @@ img {
   width: 300px;
   height: 250px;
   border-radius: 10px;
+  transform: scale(0.9);
+  transition: transform 0.4s;
+}
+
+img:hover {
+  transform: scale(1);
 }
 
 ul {
