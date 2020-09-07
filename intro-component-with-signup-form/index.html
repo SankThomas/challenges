@@ -31,30 +31,39 @@
         <h3>Try it free 7 days <span>then $20/mo. thereafter</span></h3>
 
         <form class="form" id="form">
-          <input
-            type="text"
-            name="firstname"
-            placeholder="First Name"
-            required
-          />
-          <input type="text" name="lastname" placeholder="Last Name" required />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-          />
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            required
-          />
-          <input
-            type="submit"
-            name="submit button"
-            value="Claim your free trial"
-          />
+          <div class="form-control">
+            <input type="text" name="firstname" placeholder="First Name" id="firstname"/>
+          <p class="error-image">
+            <img src="./images/icon-error.svg" alt="error icon" id="error-icon-1">
+          </p>
+          <small class="error" id="error-1"><i></i></small>
+          </div>
+          
+          <div class="form-control">
+            <input type="text" name="lastname" placeholder="Last Name" id="lastname" />
+          <p class="error-image">
+            <img src="./images/icon-error.svg" alt="error icon" id="error-icon-2">
+          </p>
+          <small class="error" id="error-2"><i></i></small>
+          </div>
+          
+          <div class="form-control">
+            <input type="email" name="email" placeholder="Email Address" id="email"/>
+          <p class="error-image">
+            <img src="./images/icon-error.svg" alt="error icon" id="error-icon-3">
+          </p>
+          <small class="error" id="error-3"><i></i></small>
+          </div>
+
+          <div class="form-control">
+            <input type="password" name="password" placeholder="Password" id="password" />
+          <p class="error-image">
+            <img src="./images/icon-error.svg" alt="error icon" id="error-icon-4">
+          </p>
+          <small class="error" id="error-4"><i></i></small>
+          </div>
+          
+          <input id="submit" type="submit" name="submit button" value="Claim your free trial">
           <br />
           <p>
             By clicking the button, you are agreeing to our
@@ -72,5 +81,8 @@
         >. Coded by <a href="https://github.com/SankThomas/challenges">Thomas Sankara</a>.
       </p>
     </footer>
+
+  
+    <script src="script.js"></script>
   </body>
 </html>
