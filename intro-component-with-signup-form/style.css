@@ -131,6 +131,7 @@ body {
   left: 50%;
   bottom: 1%;
   transform: translateX(-50%);
+  color: #fff;
   font-size: 14px;
   text-align: center;
 }
