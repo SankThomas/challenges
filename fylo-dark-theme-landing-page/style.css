@@ -5,9 +5,19 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif;
 }
 
 a {
+  font-family: "Raleway", sans-serif;
   text-decoration: none;
 }
 
@@ -15,8 +25,13 @@ ul {
   list-style-type: none;
 }
 
+p {
+  font-size: 14px;
+}
+
 .btn,
 input[type="submit"] {
+  font-family: "Raleway", sans-serif;
   background-image: linear-gradient(
     120deg,
     hsl(176, 68%, 64%),
@@ -160,20 +175,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 0 350px;
-  width: 1450px;
+  padding: 150px 0 350px;
+  width: 1400px;
   margin: auto;
 }
 
 .testimonials .quotes {
   position: absolute;
-  left: 5.3%;
+  left: 8%;
   margin-top: -230px;
   z-index: -1;
 }
 
 .testimonials .quote {
-  background: hsl(217, 28%, 15%);
+  background: hsl(219, 30%, 18%);
+  width: 350px;
   margin: 30px;
   padding: 40px 30px 10px;
   border-radius: 5px;
@@ -220,7 +236,7 @@ body {
 }
 
 .early-access p {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.5;
   margin-bottom: 30px;
 }
@@ -249,7 +265,7 @@ body {
 }
 
 .footer > div:first-child {
-  padding-left: 50px;
+  padding-left: 40px;
   margin-bottom: 20px;
 }
 
@@ -260,7 +276,7 @@ body {
 
 .footer-inner p {
   display: inline-block;
-  font-size: 15px;
+  font-size: 14px;
   width: 320px;
   line-height: 1.5;
 }
@@ -272,6 +288,7 @@ body {
 
 .footer-inner ul li {
   line-height: 2;
+  font-size: 13px;
 }
 
 .footer-inner ul li img {
@@ -283,6 +300,7 @@ body {
 }
 
 .footer-inner .socials ul li {
+  font-size: 16px;
   margin: 0 10px;
   padding: 5px 14px;
   border: 1px solid hsl(0, 0%, 100%);
@@ -302,4 +320,73 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1000px) {
+  .productive {
+    grid-template-columns: 1fr;
+    width: 800px;
+    text-align: center;
+  }
+
+  .productive div {
+    margin-right: 0;
+  }
+
+  .productive > div:nth-child(2) {
+    transform: translateY(0%);
+  }
+
+  .productive h2 {
+    width: 800px;
+  }
+
+  .productive .img {
+    margin: 100px;
+  }
+
+  .testimonials {
+    flex-direction: column;
+    width: 400px;
+  }
+
+  .testimonials .quotes {
+    left: 30%;
+    margin-top: -700px;
+  }
+
+  .testimonials .quote {
+    margin-bottom: 0;
+  }
+
+  .footer > div:first-child {
+    padding-left: 10px;
+  }
+
+  .footer-inner img {
+    margin-left: 0;
+  }
+
+  .footer-inner ul li img {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .early-access {
+    width: 500px;
+    margin-top: -180px;
+    padding: 50px 20px;
+  }
+
+  .early-access input[type="email"] {
+    width: 200px;
+  }
+
+  .early-access input[type="submit"] {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 768px) {
 }
