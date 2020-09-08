@@ -504,8 +504,8 @@ body {
   .mobile {
     position: absolute;
     display: block;
-    padding: 100px;
-    margin-top: -190px;
+    padding: 50px;
+    margin-top: -110px;
     margin-left: -50px;
     width: 100%;
   }
