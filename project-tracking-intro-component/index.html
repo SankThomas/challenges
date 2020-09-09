@@ -22,12 +22,6 @@
   </head>
 
   <body>
-    <!-- Show only on device widths less than 768px -->
-    <!-- Close icon will be put in using JavaScript -->
-    <div class="menu-button">
-      <img src="./images/icon-hamburger.svg" alt="" />
-    </div>
-
     <!-- Background-svg image -->
     <div class="background"></div>
 
@@ -37,7 +31,7 @@
         <a href="index.html"><img src="./images/logo.svg" alt="logo" /></a>
       </div>
 
-      <div class="main-list nav">
+      <nav class="main-list nav">
         <ul class="list">
           <li><a href="#">Product</a></li>
           <li><a href="#">Features</a></li>
@@ -45,11 +39,17 @@
           <li class="icon">
             <a href="#"><i class="fas fa-circle"></i></a>
           </li>
-          <div class="line"></div>
+          <li class="line"></li>
           <li class="login"><a href="#">Login</a></li>
         </ul>
+      </nav>
+      <!-- Menu button -->
+      <div class="menu-button">
+        <img src="./images/icon-hamburger.svg" alt="" />
       </div>
     </header>
+
+    <div class="back"></div>
 
     <!-- Showcase -->
     <section class="showcase">
@@ -60,7 +60,7 @@
 
         <div class="span">
           <button class="btn" name="button">Schedule a demo</button>
-          <p>To see a live preview</p>
+          <p class="schedule">To see a live preview</p>
         </div>
       </div>
 
