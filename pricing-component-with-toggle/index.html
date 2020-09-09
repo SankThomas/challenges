@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Pricing Component With Toggle</title>
+  </head>
+  <body>
+    <div class="background background-1">
+      <img src="./images/bg-top.svg" alt="top background" />
+    </div>
+
+    <div class="background background-2">
+      <img src="./images/bg-bottom.svg" alt="bottom background" />
+    </div>
+    <header class="header">
+      <div class="title">
+        <h1>Our Pricing</h1>
+      </div>
+
+      <div class="toggle">
+        <label class="name">Annually</label>
+        <input type="checkbox" class="checkbox" id="checkbox" />
+
+        <label for="checkbox" class="label">
+          <div class="ball"></div>
+        </label>
+
+        <label class="name">Monthly</label>
+      </div>
+    </header>
+
+    <div class="boxes">
+      <div class="box box-1">
+        <h5>Basic</h5>
+        <div class="annual dollar-sign" id="annual-basic">
+          <div class="dollar"><span>&dollar;</span></div>
+          <div>
+            <h2>199.99</h2>
+          </div>
+        </div>
+
+        <div class="monthly dollar-sign" id="monthly-basic">
+          <div class="dollar"><span>&dollar;</span></div>
+          <div>
+            <h2>19.99</h2>
+          </div>
+        </div>
+
+        <ul>
+          <li>500 GB Storage</li>
+          <li>2 Users Allowed</li>
+          <li>Send up to 3 GB</li>
+        </ul>
+
+        <button class="btn" title="Learn More">Learn More</button>
+      </div>
+
+      <div class="box box-2">
+        <h5>Professional</h5>
+        <div class="annual dollar-sign" id="annual-pro">
+          <div class="dollar"><span>&dollar;</span></div>
+          <div>
+            <h2>249.99</h2>
+          </div>
+        </div>
+
+        <div class="monthly dollar-sign" id="monthly-pro">
+          <div class="dollar"><span>&dollar;</span></div>
+          <div>
+            <h2>24.99</h2>
+          </div>
+        </div>
+
+        <ul>
+          <li>1 TB Storage</li>
+          <li>5 Users Allowed</li>
+          <li>Send up to 10 GB</li>
+        </ul>
+
+        <button class="btn btn-pro" title="Learn More">Learn More</button>
+      </div>
+
+      <div class="box box-3">
+        <h5>Master</h5>
+        <div class="annual dollar-sign" id="annual-master">
+          <div class="dollar"><span>&dollar;</span></div>
+          <div>
+            <h2>399.99</h2>
+          </div>
+        </div>
+
+        <div class="monthly dollar-sign" id="monthly-master">
+          <div class="dollar"><span>&dollar;</span></div>
+          <div>
+            <h2>39.99</h2>
+          </div>
+        </div>
+
+        <ul>
+          <li>2 TB Storage</li>
+          <li>10 Users Allowed</li>
+          <li>Send up to 20 GB</li>
+        </ul>
+
+        <button class="btn" title="Learn More">Learn More</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/SankThomas/challenges" target="_blank"
+        >Thomas Sankara</a
+      >.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

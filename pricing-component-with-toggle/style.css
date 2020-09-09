@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.background img {
+  position: absolute;
+  z-index: -1;
+}
+
+.background-1 img {
+  width: 150px;
+  top: 0;
+  right: 0;
+}
+
+.background-2 img {
+  display: none;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 12px;
+  background: linear-gradient(120deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: #fff;
+  padding: 10px;
+  margin-top: 25px;
+  width: 200px;
+  outline: none;
+  border: 2px solid transparent;
+  border-left: none;
+  border-right: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: transparent;
+  color: hsl(237, 63%, 64%);
+  border: 2px solid hsl(237, 63%, 64%);
+}
+
+.btn-pro {
+  background: #fff;
+  color: hsl(237, 63%, 64%);
+}
+
+.btn-pro:hover {
+  background: linear-gradient(120deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  background: hsl(240, 78%, 98%);
+  text-align: center;
+}
+
+.header {
+  padding: 50px 0;
+}
+
+.header h1 {
+  font-size: 24px;
+  color: hsl(233, 13%, 49%);
+  padding-bottom: 30px;
+}
+
+.header span {
+  font-size: 14px;
+  color: hsl(234, 14%, 74%);
+  margin: 0 20px;
+}
+
+/* Toggle */
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  position: relative;
+  background: linear-gradient(120deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  padding: 5px;
+  margin: 0 20px;
+  width: 50px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.name {
+  font-size: 14px;
+  color: hsl(234, 14%, 74%);
+}
+
+.ball {
+  background: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  transition: transform 0.15s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.boxes {
+  width: 300px;
+  margin: auto;
+}
+
+.boxes .box {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 30px 0;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(231, 231, 231, 0.9);
+}
+
+.boxes .box h5 {
+  color: hsl(233, 13%, 49%);
+  padding-bottom: 20px;
+}
+
+.boxes .box h2 {
+  font-size: 46px;
+  color: hsl(232, 13%, 33%);
+}
+
+.boxes .box h2 span {
+  display: inline-block;
+  font-size: 30px;
+}
+
+.boxes .box ul {
+  padding-top: 20px;
+}
+
+.boxes .box ul li {
+  font-size: 14px;
+  color: hsl(233, 13%, 49%);
+  border-top: 1px solid hsl(234, 14%, 74%);
+  width: 200px;
+  margin: auto;
+  padding: 12px 0;
+}
+
+.boxes .box .dollar-sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxes .box .dollar-sign .dollar {
+  font-size: 30px;
+  color: hsl(232, 13%, 33%);
+  margin-right: 5px;
+}
+
+.boxes .box-2 .dollar-sign .dollar {
+  color: #fff;
+}
+
+.boxes .box-2 {
+  background: linear-gradient(120deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.boxes .box-2 h2,
+.boxes .box-2 h5,
+.boxes .box-2 ul li {
+  color: #fff;
+}
+
+.boxes .box ul > li:last-child {
+  border-bottom: 1px solid hsl(234, 14%, 74%);
+}
+
+.boxes .box .monthly {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  .background img {
+    width: 300px;
+  }
+
+  .background-2 img {
+    display: block;
+  }
+
+  body {
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  .background-2 {
+    display: block;
+  }
+
+  .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .boxes .box {
+    padding: 20px;
+  }
+
+  .boxes .box-2 {
+    padding: 40px 20px;
+  }
+
+  .attribution {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 1000px) {
+  .boxes .box {
+    padding: 20px 50px;
+  }
+
+  .boxes .box-2 {
+    padding: 50px;
+  }
+}

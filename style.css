@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -11,20 +11,21 @@ ul {
 }
 
 body {
-  font-family: "Be Vietnam", sans-serif;
-  background: url("https://images.pexels.com/photos/1421264/pexels-photo-1421264.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+  font-family: 'Be Vietnam', sans-serif;
+  background: url('https://images.pexels.com/photos/1421264/pexels-photo-1421264.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
     no-repeat center bottom/cover;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: #fff;
 }
 
 .overlay h1 {
+  font-size: 24px;
   font-weight: 400;
-  text-align: center;
   padding-top: 20px;
-  color: #fff;
 }
 
 img {
