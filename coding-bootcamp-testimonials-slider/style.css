@@ -93,7 +93,7 @@ body {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 44%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -44%);
   background: #fff;
@@ -148,7 +148,7 @@ body {
   }
 
   .icons {
-    top: 77%;
+    top: 70%;
     left: 60%;
   }
 
@@ -205,7 +205,7 @@ body {
   }
 
   .icons {
-    top: 84%;
+    top: 78%;
   }
 
   .slide {
