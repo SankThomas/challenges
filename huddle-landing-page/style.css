@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background: hsl(257, 40%, 49%);
+}
+
+.bg {
+  background: url('../huddle-landing-page/images/bg-mobile.svg') no-repeat
+    center center/cover;
+  color: #fff;
+}
+
+.header {
+  width: 320px;
+  margin: auto;
+  padding: 30px 0 50px;
+}
+
+.header .logo img {
+  width: 150px;
+}
+
+.showcase {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.showcase img {
+  width: 300px;
+}
+
+.showcase h1 {
+  margin: 40px 0 15px;
+}
+
+.showcase p {
+  margin-bottom: 20px;
+}
+
+.showcase .btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  background: #fff;
+  color: hsl(257, 40%, 49%);
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(62, 28, 150, 0.9);
+}
+
+.social ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: -40px;
+}
+
+.social ul li {
+  margin: 10px;
+  padding: 7px 8px 2px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.social ul li a {
+  color: #fff;
+}
+
+.attribution {
+  margin: 10px 0;
+  font-size: 13px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #fff;
+}
+
+/* Mobile first media queries */
+@media (min-width: 1000px) {
+  * {
+    overflow: hidden;
+  }
+
+  .bg {
+    background: url('../huddle-landing-page/images/bg-desktop.svg') no-repeat
+      center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .header {
+    padding: 0;
+    width: 1000px;
+  }
+
+  .header .logo img {
+    width: 200px;
+  }
+
+  .showcase {
+    display: flex;
+    width: 1000px;
+    text-align: left;
+  }
+
+  .showcase .hero {
+    padding-right: 400px;
+  }
+
+  .showcase img {
+    width: 550px;
+  }
+
+  .showcase h1 {
+    font-size: 30px;
+    width: 400px;
+  }
+
+  .showcase p {
+    font-size: 16px;
+  }
+
+  .social ul {
+    justify-content: flex-end;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    padding-top: 50px;
+    width: 1220px;
+  }
+
+  .header .logo img {
+    width: 200px;
+  }
+
+  .showcase {
+    padding: 50px 100px 0 50px;
+    width: 1300px;
+  }
+
+  .showcase img {
+    width: 660px;
+  }
+
+  .showcase h1 {
+    font-size: 36px;
+    padding-left: 30px;
+    width: 500px;
+  }
+
+  .showcase p {
+    padding-left: 30px;
+  }
+
+  .showcase .btn {
+    margin-left: 30px;
+  }
+}
