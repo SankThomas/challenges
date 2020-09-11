@@ -57,13 +57,20 @@ body {
   background: #fff;
   color: hsl(257, 40%, 49%);
   outline: none;
-  border: none;
+  border: 2px solid hsl(257, 40%, 49%);
   border-radius: 50px;
   margin-bottom: 20px;
   padding: 10px;
   width: 200px;
   cursor: pointer;
   box-shadow: 0 5px 10px rgba(62, 28, 150, 0.9);
+  transition: all 0.4s linear;
+}
+
+.showcase .btn:hover {
+  background: hsl(258, 41%, 55%);
+  color: #fff;
+  border: 2px solid #fff;
 }
 
 .social ul {
