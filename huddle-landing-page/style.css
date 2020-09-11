@@ -49,6 +49,7 @@ body {
 
 .showcase p {
   margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 .showcase .btn {
