@@ -73,6 +73,11 @@ body {
 .ratings h3 {
   font-size: 14px;
   color: var(--VeryDarkMagenta);
+  margin-top: 10px;
+}
+
+.ratings img {
+  margin-right: 3px;
 }
 
 .testimonials {
