@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h3 {
+  line-height: 1.2;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background: var(--LightGray);
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 0 0;
+  max-width: 300px;
+  margin: auto;
+}
+
+.hero {
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 22px;
+  color: var(--Cyan);
+  margin-bottom: 20px;
+}
+
+.hero h3 {
+  font-size: 16px;
+  color: var(--BrightYellow);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 15px;
+  color: var(--GrayishBlue);
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+.bottom {
+  background: hsl(179, 93%, 32%);
+  color: #fff;
+  border-radius: 0 0 5px 5px;
+}
+
+.bottom h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.bottom .darker {
+  padding: 20px;
+}
+
+.bottom .darker h4 {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  color: var(--LightGray);
+}
+
+.bottom .darker h4 span {
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.bottom .darker p {
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.bottom .darker .btn {
+  font-weight: 700;
+  background: var(--BrightYellow);
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 15px;
+  box-shadow: 0 3px 5px rgba(50, 61, 1, 0.5);
+}
+
+.bottom .darker .btn:hover {
+  cursor: pointer;
+}
+
+.lighter {
+  background: var(--Cyan);
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+}
+
+.lighter ul {
+  padding: 0;
+}
+
+.lighter ul li {
+  font-size: 14px;
+  color: var(--LightGray);
+}
+
+.attribution {
+  font-size: 13px;
+  margin: 10px 0;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-top: 100px;
+    max-width: 650px;
+    border-radius: 10px;
+  }
+
+  .hero {
+    padding: 50px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+  }
+
+  .bottom .darker {
+    padding: 50px;
+  }
+
+  .lighter {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 10px 0;
+    width: 330px;
+    padding: 50px 0 0 50px;
+  }
+
+  .lighter ul li {
+    line-height: 1.7;
+  }
+}
