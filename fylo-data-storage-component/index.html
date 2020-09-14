@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="fylo logo" />
+        <div class="icons">
+          <i class="fas fa-file fa-2x"></i>
+          <i class="fas fa-folder fa-2x"></i>
+          <i class="fas fa-cloud-upload-alt fa-2x"></i>
+        </div>
+      </div>
+
+      <div class="usage">
+        <p>You’ve used <span>815 GB</span> of your storage</p>
+
+        <div id="progressBar" class="progress-bar">
+          <div id="progress" class="bar"></div>
+        </div>
+
+        <div class="storage">
+          <h4>0 GB</h4>
+          <h4>1000 GB</h4>
+        </div>
+
+        <div class="free-space">
+          <h2>185 <span>GB Left</span></h2>
+          <div class="triangle-down"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://github.com/SankThomas/challenges"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Thomas Sankara</a
+      >.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: url('../fylo-data-storage-component/images/bg-mobile.png')
+    no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 300px;
+  margin: auto;
+}
+
+.logo {
+  background: hsl(228, 56%, 26%);
+  padding: 30px 60px 30px 30px;
+  border-radius: 10px 80px 10px 10px;
+  width: 310px;
+  margin-bottom: 20px;
+}
+
+.logo .icons {
+  margin-top: 30px;
+}
+
+.logo .icons i {
+  background: hsl(229, 57%, 11%);
+  color: hsl(228, 35%, 45%);
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.usage {
+  background: hsl(228, 56%, 26%);
+  padding: 30px 30px 50px;
+  border-radius: 10px;
+}
+
+.usage p {
+  font-size: 14px;
+  color: hsl(243, 100%, 93%);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.usage p span {
+  font-weight: 700;
+  color: #fff;
+}
+
+.usage .progress-bar {
+  width: 100%;
+  background: hsl(229, 57%, 11%);
+  padding: 4px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.usage .bar {
+  background-image: linear-gradient(
+    120deg,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  width: 6%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.usage .storage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.usage .storage h4 {
+  font-size: 13px;
+  color: #fff;
+}
+
+.usage .free-space {
+  position: absolute;
+  background: #fff;
+  width: 180px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: -50px;
+}
+
+.usage .free-space h2 {
+  display: flex;
+  align-items: center;
+  color: hsl(229, 57%, 11%);
+  font-size: 36px;
+  padding-left: 15px;
+}
+
+.usage .free-space h2 span {
+  font-size: 13px;
+  margin-left: 10px;
+  color: hsl(229, 7%, 55%);
+  text-transform: uppercase;
+}
+
+.triangle-down {
+  display: none;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 2%;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(230, 7%, 83%);
+}
+
+@media (min-width: 900px) {
+  body {
+    background: url('../fylo-data-storage-component/images/bg-desktop.png')
+      no-repeat center center/cover;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .logo {
+    margin-right: 20px;
+    width: 350px;
+  }
+
+  .usage {
+    width: 500px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+
+  .usage p {
+    text-align: left;
+  }
+
+  .usage .free-space {
+    position: relative;
+    margin-top: -150px;
+    margin-left: 120px;
+    border-radius: 10px 10px 0 10px;
+  }
+
+  .triangle-down {
+    display: block;
+    position: absolute;
+    top: 60%;
+    right: 0;
+    margin-top: 20px;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-top: 20px solid #fff;
+  }
+}
