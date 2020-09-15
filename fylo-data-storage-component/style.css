@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 100vh;
   max-width: 300px;
   margin: auto;
 }
