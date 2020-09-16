@@ -156,6 +156,11 @@ body {
 }
 
 /* Hero-bottom */
+
+.hero-bottom {
+  margin-bottom: 60px;
+}
+
 .hero-bottom h2 {
   font-size: 28px;
   line-height: 1.3;
