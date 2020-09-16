@@ -194,8 +194,8 @@ body {
   text-align: left;
 }
 
-.footer-inner img {
-  width: 200px;
+.footer-inner svg {
+  width: 240px;
   margin-top: 50px;
 }
 
