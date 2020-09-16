@@ -18,6 +18,7 @@ h2,
 h3,
 h4 {
   color: hsl(210, 10%, 33%);
+  line-height: 1.3;
 }
 
 p {
@@ -44,6 +45,11 @@ p {
 .btn-1 {
   background: hsl(233, 100%, 69%);
   box-shadow: 0 10px 10px hsl(233, 100%, 69%, 0.2);
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.9;
 }
 
 body {
@@ -80,7 +86,6 @@ body {
 /* Showcase */
 .showcase h1 {
   font-size: 30px;
-  line-height: 1.3;
   margin-bottom: 20px;
 }
 
@@ -91,7 +96,6 @@ body {
 /* Snippets */
 .snippets h2 {
   padding-top: 100px;
-  line-height: 1.3;
   margin-bottom: 20px;
 }
 
@@ -111,7 +115,6 @@ body {
 /* Access */
 .access h3 {
   font-size: 24px;
-  line-height: 1.3;
   margin-bottom: 20px;
 }
 
@@ -126,7 +129,6 @@ body {
 /* Supercharge */
 .supercharge h2 {
   margin: 60px 0 10px;
-  line-height: 1.3;
 }
 
 .supercharge p {
@@ -163,7 +165,6 @@ body {
 
 .hero-bottom h2 {
   font-size: 28px;
-  line-height: 1.3;
   margin-bottom: 20px;
 }
 
@@ -195,6 +196,11 @@ body {
 
 .footer div ul li a {
   color: hsl(210, 10%, 33%);
+  transition: 0.4s;
+}
+
+.footer div ul li a:hover {
+  color: hsl(171, 66%, 44%);
 }
 
 .footer > div:last-child ul {
@@ -207,6 +213,10 @@ body {
   margin: 30px 10px;
 }
 
+.footer > div:last-child ul li a i:hover {
+  color: hsl(171, 66%, 44%);
+}
+
 .attribution {
   font-size: 13px;
   margin: 10px 0;
@@ -215,4 +225,260 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+  p {
+    font-size: 18px;
+  }
+
+  .btn {
+    margin-right: 20px;
+  }
+
+  .bg-mobile {
+    display: none;
+  }
+
+  .bg-desktop {
+    display: block;
+    position: absolute;
+    background: url('../clipboard-landing-page/images/bg-header-desktop.png')
+      no-repeat center center/cover;
+    padding: 150px 0;
+    width: 100%;
+  }
+
+  .container {
+    max-width: 650px;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .snippets .image img {
+    width: 500px;
+  }
+
+  .access img {
+    width: 500px;
+  }
+
+  .companies img {
+    width: 150px;
+  }
+}
+
+@media (min-width: 900px) {
+  .btn {
+    font-size: 16px;
+    width: 200px;
+    margin-right: 10px;
+    padding: 15px 0;
+  }
+
+  .container {
+    max-width: 850px;
+  }
+
+  .showcase h1 {
+    font-size: 36px;
+  }
+
+  .showcase p {
+    width: 550px;
+    margin: 0 auto 40px;
+  }
+
+  .snippets h2 {
+    font-size: 30px;
+  }
+
+  .snippets p {
+    width: 550px;
+    margin: 0 auto 100px;
+  }
+
+  .access p {
+    width: 550px;
+    margin: 0 auto 60px;
+  }
+
+  .supercharge p {
+    width: 550px;
+    margin: 0 auto 60px;
+  }
+
+  .hero-bottom p {
+    width: 550px;
+    margin: 0 auto 30px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    max-width: 950px;
+  }
+
+  .logo img {
+    width: 110px;
+  }
+
+  .showcase h1 {
+    font-size: 40px;
+  }
+
+  .showcase p {
+    width: 700px;
+  }
+
+  .snippets h2 {
+    font-size: 36px;
+  }
+
+  .snippets p {
+    width: 700px;
+  }
+
+  .snippets .image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    gap: 40px;
+  }
+
+  .snippets .image .search {
+    transform: translateY(10%);
+  }
+
+  .snippets .image img {
+    width: 600px;
+    margin-left: -150px;
+  }
+
+  .snippets .image h3 {
+    font-size: 22px;
+    margin-left: 40px;
+  }
+
+  .snippets .image p {
+    font-size: 17px;
+    width: 370px;
+    line-height: 1.8;
+  }
+
+  .access {
+    margin-top: 100px;
+  }
+
+  .access h3 {
+    font-size: 30px;
+  }
+
+  .access p {
+    width: 700px;
+    margin-bottom: 100px;
+  }
+
+  .access img {
+    width: 700px;
+  }
+
+  .supercharge h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .supercharge .blacklist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .supercharge .blacklist > div:first-child {
+    padding-top: 15px;
+  }
+
+  .supercharge .blacklist p {
+    font-size: 17px;
+    width: 300px;
+  }
+
+  .companies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .companies > div {
+    margin-right: 40px;
+  }
+
+  .hero-bottom h2 {
+    font-size: 30px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+
+  .footer > div:first-child {
+    padding-top: 15px;
+  }
+
+  .footer > div:last-child {
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .snippets .image img {
+    width: 700px;
+    margin-left: -200px;
+  }
+
+  .snippets .image h3 {
+    margin-left: 20px;
+  }
+
+  .access img {
+    width: 700px;
+  }
+
+  .supercharge .blacklist > div {
+    margin-right: 40px;
+  }
+
+  .companies > div {
+    margin-right: 40px;
+  }
+
+  .companies img {
+    width: 160px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .snippets .image img {
+    margin-left: -300px;
+  }
+
+  .snippets .image h3 {
+    margin-left: 40px;
+  }
+
+  .access img {
+    width: 800px;
+  }
+}
+
+@media (min-width: 1492px) {
+  .snippets .image img {
+    margin-left: -400px;
+  }
 }
