@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  color: hsl(192, 100%, 9%);
+}
+
+p {
+  color: hsl(192, 100%, 9%);
+}
+
+.btn-showcase {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  background: hsl(322, 100%, 66%);
+  color: #fff;
+  padding: 13px;
+  width: 200px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 10px 10px hsl(207, 100%, 98%, 1);
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 300px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0 100px;
+}
+
+.header img {
+  width: 110px;
+}
+
+.header .btn {
+  font-family: 'Open Sans', sans-serif;
+  background: transparent;
+  color: hsl(322, 100%, 66%);
+  padding: 5px 15px;
+  outline: none;
+  border: 1px solid hsl(322, 100%, 66%);
+  border-radius: 30px;
+  box-shadow: 0 2px 10px hsl(322, 100%, 66%, 0.3);
+  cursor: pointer;
+}
+
+/* Showcase */
+.showcase h1 {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.showcase p {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.showcase .btn-showcase {
+  margin-bottom: 80px;
+}
+
+.showcase > div:last-child img {
+  width: 300px;
+  margin-bottom: 150px;
+}
+
+/* Fans */
+.fans img {
+  display: block;
+  margin-right: auto;
+  margin-left: 65px;
+  width: 35px;
+}
+
+.fans > div {
+  margin-bottom: 80px;
+}
+
+.fans h2 {
+  font-size: 60px;
+}
+
+.fans p {
+  color: hsl(180, 1%, 59%);
+}
+
+/* Grow together */
+.grow img {
+  width: 300px;
+  margin-bottom: 60px;
+}
+
+.grow h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.grow p {
+  font-size: 15px;
+  margin-bottom: 200px;
+}
+
+/* Conversations */
+.conversations img {
+  width: 300px;
+  margin-bottom: 60px;
+}
+
+.conversations h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.conversations p {
+  font-size: 15px;
+  margin-bottom: 200px;
+}
+
+/* Your users */
+.users img {
+  width: 300px;
+  margin-bottom: 60px;
+}
+
+.users h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.users p {
+  font-size: 15px;
+  margin-bottom: 200px;
+}
+
+/* Build */
+.build h2 {
+  margin-bottom: 40px;
+}
+
+/* .bg-footer {
+  position: absolute;
+  display: block;
+  width: 100%;
+  background: url('../huddle-landing-page-with-curved-sections/images/bg-footer-top-mobile.svg')
+    no-repeat center;
+  padding: 100px;
+  margin-top: 130px;
+  z-index: -1;
+} */
+
+.footer {
+  background: hsl(192, 100%, 9%);
+  padding: 50px 0;
+  margin-top: 250px;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column-reverse;
+  color: #fff;
+  width: 300px;
+  margin: 30px auto 0;
+  text-align: left;
+}
+
+.footer-inner img {
+  width: 200px;
+  margin-top: 50px;
+}
+
+.footer-inner p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  margin: 10px 0 40px;
+  letter-spacing: 0.3px;
+  line-height: 1.8;
+}
+
+.footer-inner h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-inner ul {
+  padding: 0;
+}
+
+.footer-inner ul li {
+  margin-top: 10px;
+}
+
+.footer-inner ul li span {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.footer-inner .lorem > div:last-child ul {
+  display: flex;
+}
+
+.footer-inner .lorem > div:last-child ul li {
+  margin: 40px 20px 0 0;
+}
+
+.footer-inner i {
+  color: #fff;
+}
+
+.footer-inner .form input {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  width: 300px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.footer-inner .form input[type='submit'] {
+  display: block;
+  font-weight: 700;
+  background: hsl(322, 100%, 66%);
+  color: #fff;
+  width: 150px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.attribution {
+  background: hsl(192, 100%, 9%);
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(227, 10%, 83%);
+  text-decoration: underline;
+}
