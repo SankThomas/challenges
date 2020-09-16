@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: hsl(210, 10%, 33%);
+}
+
+p {
+  font-size: 15px;
+  color: hsl(201, 11%, 66%);
+}
+
+.btn {
+  font-family: 'Bai Jamjuree';
+  font-size: 15px;
+  font-weight: 600;
+  background: hsl(171, 66%, 44%);
+  color: #fff;
+  width: 250px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 12px 0;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 10px 10px hsl(171, 66%, 44%, 0.2);
+  letter-spacing: 0.5px;
+}
+
+.btn-1 {
+  background: hsl(233, 100%, 69%);
+  box-shadow: 0 10px 10px hsl(233, 100%, 69%, 0.2);
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.bg-mobile {
+  position: absolute;
+  background: url('../clipboard-landing-page/images/bg-header-mobile.png')
+    no-repeat center center/cover;
+  padding: 150px 0;
+  width: 100%;
+}
+
+.bg-desktop {
+  display: none;
+}
+
+.container {
+  max-width: 300px;
+  margin: auto;
+}
+
+.logo {
+  padding: 100px 0 30px;
+}
+
+.logo img {
+  width: 80px;
+}
+
+/* Showcase */
+.showcase h1 {
+  font-size: 30px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.showcase p {
+  margin-bottom: 30px;
+}
+
+/* Snippets */
+.snippets h2 {
+  padding-top: 100px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.snippets h3 {
+  margin-bottom: 10px;
+}
+
+.snippets p {
+  margin-bottom: 60px;
+}
+
+.snippets .image img {
+  width: 300px;
+  margin-bottom: 60px;
+}
+
+/* Access */
+.access h3 {
+  font-size: 24px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.access p {
+  margin-bottom: 60px;
+}
+
+.access img {
+  width: 300px;
+}
+
+/* Supercharge */
+.supercharge h2 {
+  margin: 60px 0 10px;
+  line-height: 1.3;
+}
+
+.supercharge p {
+  margin-bottom: 60px;
+}
+
+.supercharge .blacklist img {
+  margin-bottom: 30px;
+}
+
+.supercharge .blacklist h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Companies */
+.companies {
+  margin: 80px 0 100px;
+}
+
+.companies div {
+  margin-top: 60px;
+}
+
+.companies img {
+  width: 120px;
+}
+
+/* Hero-bottom */
+.hero-bottom h2 {
+  font-size: 28px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.hero-bottom p {
+  margin-bottom: 40px;
+}
+
+/* Footer */
+.footer {
+  background: hsl(180, 5%, 92%);
+  padding: 30px 0;
+}
+
+.footer > div:first-child img {
+  width: 50px;
+}
+
+.footer div {
+  margin-top: 10px;
+}
+
+.footer div ul {
+  padding: 0;
+}
+
+.footer div ul li {
+  margin-top: 10px;
+}
+
+.footer div ul li a {
+  color: hsl(210, 10%, 33%);
+}
+
+.footer > div:last-child ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer > div:last-child ul li {
+  margin: 30px 10px;
+}
+
+.attribution {
+  font-size: 13px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
