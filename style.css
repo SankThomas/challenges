@@ -12,12 +12,11 @@ ul {
 
 body {
   font-family: 'Be Vietnam', sans-serif;
-  background: url('https://images.pexels.com/photos/1421264/pexels-photo-1421264.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
-    no-repeat center bottom/cover;
+  background: url('/desktop-background.jpg') no-repeat center center/cover;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
   color: #fff;
 }
@@ -75,6 +74,10 @@ ul li a {
 }
 
 @media (max-width: 767px) {
+  body {
+    background: url('/mobile-background.jpg') no-repeat center center/cover;
+  }
+
   ul {
     flex-direction: column;
   }
