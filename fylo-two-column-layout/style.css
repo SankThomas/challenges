@@ -81,17 +81,12 @@ body {
   text-align: center;
 }
 
-.container {
-  /* max-width: 300px; */
-  margin: auto;
-}
-
 .header {
   font-family: 'Raleway', sans-serif;
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
-  max-width: 300px;
+  padding: 30px 0 20px;
+  width: 300px;
   margin: auto;
 }
 
@@ -113,11 +108,15 @@ body {
   color: hsl(243, 87%, 12%);
 }
 
+.header .navbar ul li a:hover {
+  text-decoration: underline;
+}
+
 .showcase {
   display: flex;
   flex-direction: column-reverse;
   padding-top: 30px;
-  max-width: 300px;
+  width: 300px;
   margin: auto;
 }
 
@@ -252,6 +251,10 @@ body {
   margin-bottom: 30px;
 }
 
+.footer-inner .contacts {
+  margin-top: 20px;
+}
+
 .footer-inner .contacts span {
   font-size: 14px;
   color: #fff;
@@ -290,7 +293,7 @@ body {
 }
 
 .attribution {
-  font-size: 13px;
+  font-size: 11px;
   background: hsl(243, 87%, 12%);
   color: #fff;
   padding: 10px 0;
@@ -299,4 +302,256 @@ body {
 
 .attribution a {
   color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 768px) {
+  .bg-mobile {
+    display: none;
+  }
+
+  .bg-desktop {
+    display: block;
+    margin: 150px 0 -10px;
+  }
+
+  .header {
+    width: 680px;
+  }
+
+  .header img {
+    width: 100px;
+  }
+
+  .header .navbar ul li a {
+    font-size: 16px;
+  }
+
+  .showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 680px;
+    padding-top: 50px;
+    text-align: left;
+  }
+
+  .showcase h1 {
+    font-size: 30px;
+  }
+
+  .showcase img {
+    width: 300px;
+  }
+
+  .section-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+
+  .section-2 h2 {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .section-2 img {
+    width: 380px;
+  }
+
+  .section-2 .link {
+    text-align: left;
+    margin-top: -30px;
+  }
+
+  .access-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    width: 680px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 900px) {
+  .header {
+    width: 800px;
+  }
+
+  .header img {
+    width: 150px;
+  }
+
+  .showcase {
+    width: 800px;
+  }
+
+  .showcase h1 {
+    font-size: 28px;
+    width: 450px;
+  }
+
+  .showcase img {
+    width: 100%;
+  }
+
+  .section-2 h2 {
+    width: 350px;
+  }
+
+  .section-2 p {
+    width: 350px;
+  }
+
+  .testimonial .test-inner {
+    width: 310px;
+    margin-left: 100px;
+  }
+
+  .access-inner {
+    gap: 20px;
+    width: 800px;
+  }
+
+  .form-access input {
+    width: 400px;
+  }
+
+  .form-access input[type='submit'] {
+    width: 200px;
+  }
+
+  .footer {
+    padding-top: 150px;
+  }
+
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+  }
+
+  .footer-inner > div:first-child {
+    margin-top: -73px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .header {
+    width: 1000px;
+  }
+
+  .showcase {
+    width: 1000px;
+  }
+
+  .showcase h1 {
+    font-size: 34px;
+    width: 500px;
+  }
+
+  .showcase p {
+    font-size: 16px;
+  }
+
+  .section-2 {
+    gap: 0;
+  }
+
+  .section-2 h2 {
+    font-size: 24px;
+    width: 400px;
+  }
+
+  .section-2 p {
+    font-size: 16px;
+    width: 400px;
+  }
+
+  .section-2 img {
+    width: 520px;
+  }
+
+  .section-2 a {
+    font-size: 14px;
+  }
+
+  .testimonial .test-inner {
+    width: 320px;
+  }
+
+  .testimonial .test-inner p {
+    font-size: 14px;
+  }
+
+  .testimonial .test-inner .avatar h3 {
+    font-size: 16px;
+  }
+
+  .testimonial .test-inner .avatar p {
+    font-size: 12px;
+  }
+
+  .access-inner {
+    width: 1000px;
+    gap: 160px;
+  }
+
+  .footer-inner {
+    width: 1000px;
+  }
+}
+
+@media (min-width: 1439px) {
+  .header {
+    width: 1250px;
+  }
+
+  .header .navbar ul li {
+    margin-right: 30px;
+  }
+
+  .showcase {
+    width: 1250px;
+    place-items: center;
+  }
+
+  .showcase h1 {
+    font-size: 46px;
+    width: 700px;
+  }
+
+  .form-showcase input[type='submit'] {
+    width: 200px;
+    margin-left: 20px;
+  }
+
+  .bg-desktop img {
+    width: 1600px;
+  }
+
+  .section-2 h2 {
+    font-size: 30px;
+    width: 500px;
+  }
+
+  .section-2 p {
+    width: 500px;
+  }
+
+  .section-2 img {
+    width: 600px;
+  }
+
+  .testimonial .test-inner {
+    width: 400px;
+    margin-left: 140px;
+  }
+
+  .access-inner {
+    width: 1250px;
+  }
+
+  .footer-inner {
+    width: 1250px;
+  }
 }
