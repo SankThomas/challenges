@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Raleway', sans-serif;
+  color: hsl(243, 87%, 12%);
+}
+
+p {
+  color: hsl(243, 87%, 12%);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.form input {
+  font-family: 'Raleway', sans-serif;
+  width: 300px;
+  padding: 12px 0 12px 20px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form input::placeholder {
+  font-family: 'Raleway', sans-serif;
+}
+
+.form input[type='submit'] {
+  font-weight: 700;
+  background: hsl(224, 93%, 58%);
+  color: #fff;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form input[type='submit']:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.form-access input {
+  margin-bottom: 12px;
+}
+
+.bg-desktop {
+  display: none;
+}
+
+.bg-mobile {
+  margin: 100px 0 -10px;
+}
+
+.bg-mobile img {
+  width: 768px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.container {
+  /* max-width: 300px; */
+  margin: auto;
+}
+
+.header {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  max-width: 300px;
+  margin: auto;
+}
+
+.header img {
+  width: 80px;
+}
+
+.header .navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+.header .navbar ul li {
+  margin-right: 15px;
+}
+
+.header .navbar ul li a {
+  font-size: 13px;
+  color: hsl(243, 87%, 12%);
+}
+
+.showcase {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 30px;
+  max-width: 300px;
+  margin: auto;
+}
+
+.showcase img {
+  width: 280px;
+}
+
+.showcase h1 {
+  font-size: 24px;
+  padding: 20px 0;
+  line-height: 1.3;
+}
+
+.showcase p {
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+
+.section-2 {
+  background: hsl(250, 75%, 98%);
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 50px;
+}
+
+.section-2 img {
+  width: 280px;
+  padding-top: 30px;
+}
+
+.section-2 h2 {
+  font-size: 18px;
+  width: 300px;
+  margin: 50px auto 20px;
+}
+
+.section-2 p {
+  font-size: 14px;
+  color: hsl(238, 22%, 44%);
+  width: 300px;
+  margin: 0 auto 20px;
+  text-align: left;
+}
+
+.section-2 a {
+  font-size: 13px;
+  color: hsl(169, 47%, 42%);
+  padding-bottom: 5px;
+  border-bottom: 2px solid hsl(169, 47%, 42%);
+}
+
+.section-2 a > img {
+  width: 20px;
+  margin-bottom: -5px;
+}
+
+.testimonial {
+  background: hsl(240, 75%, 98%);
+  text-align: left;
+  padding: 30px 0 100px;
+}
+
+.testimonial .test-inner {
+  background: #fff;
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial .test-inner .p {
+  font-size: 12px;
+  width: 290px;
+  line-height: 1.7;
+}
+
+.testimonial .test-inner .avatar {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial .test-inner .avatar img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.testimonial .test-inner .avatar h3 {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.testimonial .test-inner .avatar p {
+  font-size: 10px;
+}
+
+.access {
+  background: hsl(238, 22%, 44%);
+  padding: 60px 0 70px;
+}
+
+.access-inner {
+  width: 300px;
+  margin: auto;
+}
+
+.access-inner h3 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.access-inner p {
+  font-size: 15px;
+  color: #fff;
+  margin: 20px 0 30px;
+}
+
+.footer {
+  background: hsl(243, 87%, 12%);
+  padding: 70px 0 1px;
+}
+
+.footer-inner {
+  width: 300px;
+  margin: auto;
+  text-align: left;
+}
+
+.footer-inner div {
+  margin-bottom: 30px;
+}
+
+.footer-inner .contacts span {
+  font-size: 14px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.footer-inner ul li {
+  margin-bottom: 10px;
+}
+
+.footer-inner ul li a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-inner ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-inner .social ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-inner .social ul li {
+  margin-right: 10px;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.footer-inner .social ul li:hover {
+  cursor: pointer;
+  background: hsl(238, 22%, 44%);
+}
+
+.attribution {
+  font-size: 13px;
+  background: hsl(243, 87%, 12%);
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(0, 0%, 100%);
+}
