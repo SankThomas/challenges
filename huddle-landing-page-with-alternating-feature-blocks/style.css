@@ -454,15 +454,22 @@ body {
   .section-2 .conversations,
   .section-2 .users {
     width: 930px;
-  }
-
-  .section-2 .users {
+    padding: 50px;
     margin-bottom: 50px;
   }
 
+  .section-2 img {
+    width: 400px;
+  }
+
+  .section-2 .users {
+    margin-bottom: 150px;
+  }
+
   .build {
-    margin-top: -80px;
+    margin-top: -120px;
     margin-left: 230px;
+    padding: 60px 0;
   }
 
   .footer-inner {
@@ -477,7 +484,7 @@ body {
 
 @media (min-width: 1200px) {
   .desktop img {
-    height: 500px;
+    height: 550px;
   }
 
   .container {
@@ -532,6 +539,10 @@ body {
 @media (min-width: 1400px) {
   .container {
     max-width: 1300px;
+  }
+
+  .hero h1 {
+    width: 500px;
   }
 
   .section-2 .grow,
