@@ -34,7 +34,6 @@ body {
   position: absolute;
   height: 70%;
   right: 0;
-  bottom: -56%;
   background: hsl(290, 37%, 97%);
   padding: 0 100px;
   z-index: -1;
@@ -211,11 +210,13 @@ body {
 
 .right h2 {
   font-size: 34px;
+  font-weight: 500;
   color: hsl(271, 36%, 24%);
   margin-bottom: 20px;
 }
 
 .right p {
+  /* font-size: 15px; */
   color: hsl(270, 7%, 64%);
   line-height: 1.5;
   margin-bottom: 20px;
