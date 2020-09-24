@@ -27,7 +27,7 @@ body {
   background: hsl(268, 99%, 61%);
   padding: 0 100px;
   z-index: -1;
-  border-radius: 0 0 180px 0;
+  border-radius: 0 0 300px 0;
 }
 
 .right-img {
@@ -37,7 +37,7 @@ body {
   background: hsl(290, 37%, 97%);
   padding: 0 100px;
   z-index: -1;
-  border-radius: 180px 0 0 0;
+  border-radius: 300px 0 0 0;
 }
 
 .left .top-img {
