@@ -6,12 +6,224 @@
   padding: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
 body {
   font-family: 'Rubik', sans-serif;
+  background: hsl(270, 20%, 96%);
+}
+
+.left-img {
+  position: absolute;
+  top: 0;
+  height: 80%;
+  width: 20%;
+  background: hsl(268, 99%, 61%);
+  padding: 0 100px;
+  z-index: -1;
+  border-radius: 0 0 180px 0;
+}
+
+.right-img {
+  position: absolute;
+  height: 70%;
+  right: 0;
+  bottom: -56%;
+  background: hsl(290, 37%, 97%);
+  padding: 0 100px;
+  z-index: -1;
+  border-radius: 180px 0 0 0;
+}
+
+.left .top-img {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 15px;
+  width: 150px;
+  border-radius: 0 0 15px 15px;
+  z-index: 1;
+}
+
+.left .inner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: hsl(270, 20%, 96%);
+  width: 300px;
+  margin: 100px auto;
+  padding: 10px 0;
+  border-radius: 30px;
+  border: 10px solid #fff;
+  box-shadow: 0 20px 50px hsl(271, 36%, 24%, 0.2);
+}
+
+.left .inner-text .avatar {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(120deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  color: #fff;
+  width: 280px;
+  margin-top: -10px;
+  padding: 15px 5px;
+  border-radius: 20px 20px 0 0;
+}
+
+.left .inner-text .avatar div {
+  margin: 15px 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.left .inner-text .avatar img {
+  width: 35px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.left .inner-text .avatar h3 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.left .inner-text .avatar p {
+  font-size: 11px;
+  color: hsl(268, 41%, 93%);
+}
+
+.left .inner-text .avatar .ellipsis {
+  margin-left: 50px;
+}
+
+.chats li {
+  font-size: 11px;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.chats ul > li:nth-child(5) {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.chats .left-chat {
+  background: hsl(268, 41%, 93%);
+  color: hsl(276, 55%, 52%);
+  width: 180px;
+  padding: 10px;
+  border-radius: 10px 10px 10px 5px;
+}
+
+.chats .right-chat {
+  background: hsl(0, 0%, 100%);
+  padding: 10px;
+  width: 180px;
+  display: block;
+  margin: 10px 0 10px auto;
+  border-radius: 10px 10px 5px 10px;
+  color: hsl(271, 15%, 43%);
+}
+
+.chats .images {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.chats .images li {
+  margin: 0 5px;
+}
+
+.chats .images li img {
+  width: 50px;
+  border-radius: 10px;
+}
+
+.prices ul .left-chat {
+  background: linear-gradient(
+    120deg,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  ) !important;
+  color: hsl(268, 41%, 93%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prices ul .left-chat {
+  width: 210px;
+}
+
+.prices ul li span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  padding-right: 10px;
+}
+
+.form {
+  margin: 20px 0 5px;
+}
+
+.form input {
+  font-family: 'Rubik', sans-serif;
+  font-size: 12px;
+  width: 260px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+}
+
+.form input::placeholder {
+  color: hsl(206, 6%, 79%);
+}
+
+.form button {
+  position: absolute;
+  background: hsl(271, 36%, 24%);
+  color: #fff;
+  padding: 7px 10px;
+  margin-top: 2px;
+  margin-left: -33px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 5px hsl(271, 36%, 24%, 0.3);
+}
+
+.right {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.right h2 {
+  font-size: 34px;
+  color: hsl(271, 36%, 24%);
+  margin-bottom: 20px;
+}
+
+.right p {
+  color: hsl(270, 7%, 64%);
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .attribution {
   font-size: 13px;
+  color: hsl(270, 7%, 64%);
   padding: 10px 0;
   text-align: center;
 }

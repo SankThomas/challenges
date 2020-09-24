@@ -12,18 +12,110 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
 
     <title>Frontend Mentor | Chat App CSS Illustration</title>
   </head>
   <body>
-    Samuel Green Available to Walk That sounds great. I’d be happy with that.
-    Could you send over some pictures of your dog, please? Here are a few
-    pictures. She’s a happy girl! Can you make it? She looks so happy! The time
-    we discussed works. How long shall I take her out for? 30 minute walk $29 1
-    hour walk $49 Type a message… Simple booking Stay in touch with our dog
-    walkers through the chat interface. This makes it easy to discuss
-    arrangements and make bookings. Once the walk has been completed you can
-    rate your walker and book again all through the chat.
+    <div class="left-img"></div>
+
+    <div class="container">
+      <!-- Left background -->
+
+      <div class="left">
+        <div class="top-img"></div>
+        <div class="inner-text">
+          <div>
+            <div class="avatar">
+              <div>
+                <i class="fas fa-chevron-left"></i>
+              </div>
+              <div>
+                <img src="./images/avatar.jpg" alt="avatar image" />
+              </div>
+              <div>
+                <h3>Samuel Green</h3>
+                <p>Available to Walk</p>
+              </div>
+
+              <div class="ellipsis">
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chats -->
+          <div class="chats">
+            <ul class="main-chat">
+              <li class="left-chat">
+                That sounds great. I’d be happy with that.
+              </li>
+
+              <li class="left-chat">
+                Could you send over some pictures of your dog, please?
+              </li>
+              <ul class="images">
+                <li>
+                  <img src="./images/dog-image-1.jpg" alt="dog image 1" />
+                </li>
+                <li>
+                  <img src="./images/dog-image-2.jpg" alt="dog image 2" />
+                </li>
+                <li>
+                  <img src="./images/dog-image-3.jpg" alt="dog image 3" />
+                </li>
+              </ul>
+              <li class="right-chat">
+                Here are a few pictures. She’s a happy girl!
+              </li>
+              <li class="right-chat">Can you make it?</li>
+              <li class="left-chat">
+                She looks so happy! The time we discussed works. How long shall
+                I take her out for?
+              </li>
+            </ul>
+            <div class="prices">
+              <ul>
+                <li class="price left-chat">
+                  <input type="radio" /> 30 minute walk <span>$29</span>
+                </li>
+                <li class="price left-chat">
+                  <input type="radio" /> 1 hour walk <span>$49</span>
+                </li>
+              </ul>
+            </div>
+
+            <form class="form">
+              <input
+                type="text"
+                title="Type a message..."
+                placeholder="Type a message..."
+              /><button type="submit" title="Send">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h2>Simple booking</h2>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+        <div class="right-img"></div>
+      </div>
+    </div>
+
+    <!-- Right background -->
 
     <div class="attribution">
       Challenge by
