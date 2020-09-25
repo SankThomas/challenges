@@ -432,3 +432,43 @@ body {
     overflow-y: hidden;
   }
 }
+
+@media (max-width: 300px) {
+  .left .inner-text {
+    width: 260px;
+  }
+
+  .left .inner-text .avatar {
+    width: 240px;
+  }
+
+  .chats .left-chat,
+  .chats .right-cat {
+    width: 150px;
+  }
+
+  .chats .left-chat {
+    margin-left: 5px;
+  }
+
+  .chats .right-chat {
+    margin-right: 5px;
+  }
+
+  .chats .images {
+    margin-left: 50px;
+  }
+
+  .form input {
+    width: 230px;
+    margin-left: 5px;
+  }
+
+  .right {
+    width: 260px;
+  }
+
+  .right h2 {
+    font-size: 26px;
+  }
+}
