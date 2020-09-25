@@ -10,6 +10,10 @@ ul {
   list-style-type: none;
 }
 
+h1 {
+  text-align: center;
+}
+
 img {
   max-width: 100%;
 }
