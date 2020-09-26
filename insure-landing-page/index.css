@@ -210,6 +210,7 @@ body {
   margin: 0 auto 20px;
 }
 
+/* Footer */
 .footer {
   background: hsl(0, 0%, 98%);
   display: flex;
@@ -233,6 +234,7 @@ body {
   position: absolute;
   padding-bottom: 10px;
   margin-top: -600px;
+  margin-bottom: 40px;
 }
 
 .footer-top img {
@@ -242,7 +244,7 @@ body {
 .ft-divider {
   background: hsl(273, 4%, 51%);
   padding: 0.5px;
-  margin-top: 20px;
+  margin: 20px 0 0;
   width: 280px;
 }
 
@@ -279,6 +281,7 @@ body {
 }
 
 .attribution {
+  background: hsl(0, 0%, 98%);
   font-size: 14px;
   padding: 10px 0;
   text-align: center;
@@ -288,7 +291,13 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 361px) {
+@media (max-width: 376px) {
+  .header .navbar {
+    top: 13%;
+  }
+}
+
+@media (max-width: 365px) {
   .header .navbar {
     top: 17%;
   }
