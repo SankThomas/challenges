@@ -12,7 +12,7 @@ ul {
 
 body {
   font-family: 'Be Vietnam', sans-serif;
-  background: url('/desktop-background.jpg') no-repeat center center/cover;
+  background: #020253;
 }
 
 .overlay {
@@ -74,10 +74,6 @@ ul li a {
 }
 
 @media (max-width: 767px) {
-  body {
-    background: url('/mobile-background.jpg') no-repeat center center/cover;
-  }
-
   ul {
     flex-direction: column;
   }
