@@ -257,10 +257,6 @@ body {
   text-transform: uppercase;
 }
 
-.footer ul {
-  margin-bottom: 20px;
-}
-
 .footer ul li {
   display: flex;
   flex-direction: column;
