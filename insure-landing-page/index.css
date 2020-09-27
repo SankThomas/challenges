@@ -92,11 +92,15 @@ body {
   margin: auto;
   border: 1px solid #fff;
   padding: 10px;
-  transition: box-shadow 0.3s;
+  transition: background 0.3s;
 }
 
 .header .navbar ul > li:last-child:hover {
-  box-shadow: 0 0 20px hsl(270, 9%, 17%, 0.5);
+  background: hsl(256, 26%, 20%);
+}
+
+.header .navbar ul > li:last-child:hover a {
+  color: #fff;
 }
 
 .header .menu-btn {
@@ -418,11 +422,17 @@ body {
   }
 
   .desktop-left-bg {
+    display: block;
     position: absolute;
-    top: 70%;
+    top: 65%;
+  }
+
+  .desktop-left-bg img {
+    width: 150px;
   }
 
   .desktop-right-bg {
+    display: block;
     position: absolute;
     right: 0;
   }
@@ -446,7 +456,7 @@ body {
     flex-direction: row-reverse;
     justify-content: center;
     text-align: left;
-    padding: 100px 0 250px;
+    padding: 100px 0;
   }
 
   .showcase .hero h1 {
@@ -481,11 +491,7 @@ body {
   }
 
   .divider {
-    display: none;
-  }
-
-  .different {
-    padding-top: 200px;
+    margin-top: 150px;
   }
 
   .how .right-img-mobile {
@@ -500,8 +506,6 @@ body {
   }
 
   .how .btn {
-    position: absolute;
-    right: 20%;
     transition: background 0.4s;
   }
 
@@ -511,11 +515,11 @@ body {
   }
 
   .how > div:last-child {
-    padding: 80px 0;
+    padding: 50px 0;
   }
 
   .footer-img-mobile {
-    /* display: none; */
+    display: none;
     left: 0;
   }
 
@@ -523,13 +527,26 @@ body {
     display: block;
     position: absolute;
     left: 0;
-    margin-top: -160px;
+    margin-top: -730px;
+  }
+
+  .footer-top {
+    position: relative;
+    padding-top: 700px;
+  }
+
+  .ft-divider {
+    margin: 0;
   }
 }
 
 @media (min-width: 1200px) {
   .header {
     max-width: 1100px;
+  }
+
+  .desktop-right-bg img {
+    width: 350px;
   }
 
   .showcase .hero h1,
@@ -562,12 +579,17 @@ body {
 
   .divider {
     display: block;
-    margin: 250px 0 -180px 50px;
+    margin: 250px 0 -180px 70px;
   }
 
   .different {
     max-width: 1100px;
     text-align: left;
+    margin-top: 200px;
+  }
+
+  .different h2 {
+    font-size: 46px;
   }
 
   .different img {
@@ -583,19 +605,11 @@ body {
   }
 
   .how {
-    margin: 0 80px;
+    margin: 100px 80px;
   }
 
   .how img {
     margin-right: 40px;
-  }
-
-  .how h2 {
-    font-size: 46px;
-    max-width: 400px;
-    margin: 0;
-    text-align: left;
-    line-height: 1;
   }
 
   .how .more {
@@ -603,6 +617,23 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 0 50px;
+  }
+
+  .how > div:last-child {
+    padding: 70px 0;
+  }
+
+  .how h2 {
+    font-size: 40px;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .how .btn {
+    position: absolute;
+    right: 30%;
+    margin-top: -20px;
+    z-index: 10;
   }
 
   .footer {
@@ -614,11 +645,16 @@ body {
     display: none;
   }
 
+  .footer-img-desktop {
+    margin-top: -240px;
+  }
+
   .footer-top {
     position: relative;
     margin: 0;
     display: flex;
     justify-content: space-between;
+    padding-top: 100px;
   }
 
   .footer-inner {
@@ -633,9 +669,19 @@ body {
   }
 }
 
+@media (min-width: 1234px) and (min-width: 1439px) {
+  .divider {
+    margin-left: 150px;
+  }
+}
+
 @media (min-width: 1440px) {
   .header {
     max-width: 1340px;
+  }
+
+  .desktop-left-bg img {
+    width: 200px;
   }
 
   .showcase .hero-img-desktop {
@@ -644,6 +690,10 @@ body {
 
   .showcase .hero-img-desktop img {
     width: 500px;
+  }
+
+  .showcase .hero {
+    padding: 100px 0 150px;
   }
 
   .showcase .hero h1,
@@ -689,10 +739,9 @@ body {
     margin-right: 160px;
   }
 
-  /* 
-  .footer-top div {
-    margin: 0 400px;
-  } */
+  .how > div:last-child {
+    padding: 63px 0;
+  }
 
   .footer-inner {
     width: 1340px;
