@@ -313,7 +313,37 @@ body {
 /* Media queries */
 @media (max-width: 700px) {
   .header .navbar {
-    top: 9%;
+    top: 7%;
+  }
+}
+
+@media (max-width: 541px) and (max-height: 721px) {
+  .header .navbar {
+    top: 9.5%;
+  }
+}
+
+@media (max-width: 500px) {
+  .header .navbar {
+    top: 8.5%;
+  }
+}
+
+@media (max-width: 376px) and (max-height: 668px) {
+  .header .navbar {
+    top: 10%;
+  }
+}
+
+@media (max-width: 361px) {
+  .header .navbar {
+    top: 11%;
+  }
+}
+
+@media (max-width: 281px) and (max-height: 654px) {
+  .header .navbar {
+    top: 10%;
   }
 }
 
@@ -429,6 +459,7 @@ body {
     display: block;
     position: absolute;
     right: 0;
+    z-index: 20;
   }
 
   .showcase .divider-hero {
