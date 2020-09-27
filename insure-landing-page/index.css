@@ -552,6 +552,8 @@ body {
   .showcase .hero h1 {
     font-size: 56px;
     width: 500px;
+    line-height: 1;
+    margin-bottom: 20px;
   }
 
   .showcase .hero p {
@@ -700,7 +702,6 @@ body {
 
   .showcase .hero h1 {
     font-size: 64px;
-    line-height: 1;
     width: 450px;
   }
 
