@@ -85,7 +85,6 @@ body {
 
 .header .navbar ul li a:hover {
   color: hsl(270, 9%, 17%);
-  text-decoration: underline;
 }
 
 .header .navbar ul > li:last-child {
@@ -97,7 +96,7 @@ body {
 }
 
 .header .navbar ul > li:last-child:hover {
-  box-shadow: 0 10px 10px hsl(270, 9%, 17%, 0.3);
+  box-shadow: 0 0 20px hsl(270, 9%, 17%, 0.5);
 }
 
 .header .menu-btn {
@@ -305,13 +304,13 @@ body {
 /* Media queries */
 @media (max-width: 376px) {
   .header .navbar {
-    top: 13%;
+    top: 8.5%;
   }
 }
 
 @media (max-width: 365px) {
   .header .navbar {
-    top: 17%;
+    top: 11%;
   }
 }
 
@@ -413,6 +412,16 @@ body {
     margin: 0 20px;
   }
 
+  .desktop-left-bg {
+    position: absolute;
+    top: 70%;
+  }
+
+  .desktop-right-bg {
+    position: absolute;
+    right: 0;
+  }
+
   .showcase .divider-hero {
     background: hsl(273, 4%, 51%);
     padding: 1px;
@@ -432,7 +441,7 @@ body {
     flex-direction: row-reverse;
     justify-content: center;
     text-align: left;
-    padding: 100px 0 100px;
+    padding: 100px 0 250px;
   }
 
   .showcase .hero h1 {
@@ -446,6 +455,12 @@ body {
 
   .showcase .hero .btn {
     margin-left: -400px;
+    transition: background 0.4s;
+  }
+
+  .showcase .hero .btn:hover {
+    background: #fff;
+    color: hsl(256, 26%, 20%);
   }
 
   .showcase .hero-img-desktop {
@@ -466,6 +481,39 @@ body {
 
   .different {
     padding-top: 200px;
+  }
+
+  .how .right-img-mobile {
+    display: none;
+  }
+
+  .how .right-img-desktop {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+  }
+
+  .how .btn {
+    position: absolute;
+    right: 20%;
+    transition: background 0.4s;
+  }
+
+  .how .btn:hover {
+    background: #fff;
+    color: hsl(256, 26%, 20%);
+  }
+
+  .how > div:last-child {
+    padding: 80px 0;
+  }
+
+  .footer-img-desktop {
+    display: block;
+    position: absolute;
+    left: 0;
+    margin-top: -160px;
   }
 }
 
@@ -540,10 +588,6 @@ body {
     line-height: 1;
   }
 
-  .how > div:last-child {
-    padding: 120px 0;
-  }
-
   .how .more {
     display: flex;
     align-items: center;
@@ -565,10 +609,6 @@ body {
     margin: 0;
     display: flex;
     justify-content: space-between;
-  }
-
-  .footer-top div {
-    margin: 0 300px;
   }
 
   .footer-inner {
@@ -602,8 +642,24 @@ body {
     margin-left: -670px;
   }
 
+  .showcase .hero h1 {
+    font-size: 64px;
+    line-height: 1;
+    width: 450px;
+  }
+
   .showcase .divider-hero {
     margin-left: -670px;
+  }
+
+  .divider {
+    margin-top: 400px;
+    margin-left: 250px;
+  }
+
+  .different h2 {
+    font-size: 56px;
+    margin-bottom: 60px;
   }
 
   .different-inner {
@@ -611,9 +667,9 @@ body {
     margin: 0 auto 0;
   }
 
-  /* .different-inner p {
+  .different-inner p {
     width: 350px;
-  } */
+  }
 
   .how {
     margin: 100px 200px;
