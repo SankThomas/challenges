@@ -103,6 +103,11 @@ body {
   cursor: pointer;
 }
 
+.desktop-left-bg,
+.desktop-right-bg {
+  display: none;
+}
+
 .bg-nav {
   display: none;
   position: absolute;
@@ -507,6 +512,11 @@ body {
 
   .how > div:last-child {
     padding: 80px 0;
+  }
+
+  .footer-img-mobile {
+    /* display: none; */
+    left: 0;
   }
 
   .footer-img-desktop {
