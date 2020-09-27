@@ -703,6 +703,7 @@ body {
   .showcase .hero h1 {
     font-size: 64px;
     width: 450px;
+    margin-bottom: 30px;
   }
 
   .showcase .divider-hero {
