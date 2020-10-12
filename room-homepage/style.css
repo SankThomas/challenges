@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 14px;
+  color: hsl(0, 0%, 63%);
+}
+
+img {
+  max-width: 110%;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+}
+
+.header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header nav {
+  position: relative;
+  display: none;
+  background: #fff;
+  padding: 30px;
+}
+
+.header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header nav ul li {
+  margin: 0 10px;
+}
+
+.header nav ul li a {
+  color: #333;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.showcase .mobile-img img {
+  width: 100%;
+  height: 400px;
+}
+
+.showcase .mobile-nav {
+  position: absolute;
+  right: 0;
+  background: #000;
+  top: 350px;
+  padding: 10px 0;
+}
+
+.showcase .mobile-nav div {
+  display: inline-block;
+}
+
+.showcase .mobile-nav img {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.showcase .mobile-nav:hover {
+  background: #f1f1f1;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
