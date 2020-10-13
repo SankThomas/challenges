@@ -106,6 +106,16 @@ body {
   color: hsl(228, 90%, 12%);
 }
 
+@media (max-width: 375px) {
+  .hero-img {
+    margin-top: -190px;
+  }
+
+  .questions h3 {
+    max-width: 230px;
+  }
+}
+
 @media (min-width: 600px) {
   .container {
     max-width: 500px;
