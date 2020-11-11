@@ -131,6 +131,7 @@ body {
 .checkbox:checked + .label .ball {
   transform: translateX(24px);
 }
+/* End of toggle */
 
 .boxes {
   width: 300px;
