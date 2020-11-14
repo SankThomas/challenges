@@ -1,23 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-180350393-2"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag('js', new Date())
-
-      gtag('config', 'UA-180350393-2')
-    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -31,9 +16,9 @@
   </head>
   <body>
     <header class="header">
-      <div class="menu-btn">
+      <!-- <div class="menu-btn">
         <img src="./images/icon-hamburger.svg" alt="hamburger icon" />
-      </div>
+      </div> -->
 
       <div class="logo">
         <img src="./images/logo.svg" alt="room logo" />
@@ -49,73 +34,75 @@
       </nav>
     </header>
 
-    <section class="showcase">
-      <div class="mobile-img">
-        <img src="./images/mobile-image-hero-1.jpg" alt="mobile hero image 1" />
-      </div>
-
-      <div class="mobile-nav">
-        <div class="prev">
+    <section class="showcase slider">
+      <div class="slide slide-1">
+        <div class="imgs">
           <img
-            src="./images/icon-angle-left.svg"
-            alt="left arrow icon"
-            class="prev-icon"
+            src="./images/desktop-image-hero-1.jpg"
+            alt="slide 1"
+            class="room current"
+          />
+          <img
+            src="./images/desktop-image-hero-2.jpg"
+            alt="slide 2"
+            class="room"
+          />
+          <img
+            src="./images/desktop-image-hero-3.jpg"
+            alt="slide 3"
+            class="room"
           />
         </div>
-        <div class="next">
-          <img
-            src="./images/icon-angle-right.svg"
-            alt="right arrow icon"
-            class="next-icon"
-          />
+
+        <div class="info">
+          <div class="slides">
+            <div class="current">
+              <h1>Discover innovative ways to decorate</h1>
+              <p>
+                We provide unmatched quality, comfort, and style for property
+                owners across the country. Our experts combine form and function
+                in bringing your vision to life. Create a room in your own style
+                with our collection and make your property a reflection of you
+                and what you love.
+              </p>
+              <a href="#">shop now </a>
+              <img
+                src="./images/icon-arrow.svg"
+                alt="arrow pointing to the right"
+              />
+            </div>
+
+            <div>
+              <h1>Lorem ipsum dolor sit amet.</h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                inventore, atque voluptas doloremque expedita dolore, suscipit
+                nesciunt similique quasi tenetur fuga nam, odit esse iste modi?
+                Neque facere error voluptatibus nulla commodi, nihil maxime, qui
+                ipsa adipisci aut consequatur ut? Fugiat reiciendis hic nobis
+                pariatur aliquam, laborum sunt doloremque minus.
+              </p>
+              <a href="#">shop now </a>
+              <img
+                src="./images/icon-arrow.svg"
+                alt="arrow pointing to the right"
+              />
+            </div>
+          </div>
+
+          <div class="arrows">
+            <img
+              src="./images/icon-angle-left.svg"
+              alt="left arrow"
+              class="left"
+            />
+            <img
+              src="./images/icon-angle-right.svg"
+              alt="right arrow"
+              class="right"
+            />
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="slider">
-      <div class="slides">
-        <h1>Discover innovative ways to decorate</h1>
-
-        <p>
-          We provide unmatched quality, comfort, and style for property owners
-          across the country. Our experts combine form andnfunction in bringing
-          your vision to life. Create a room in your own style with our
-          collection and make your property a reflection of you and what you
-          love.
-        </p>
-
-        <a href="#"
-          >Shop now <img src="./images/icon-arrow.svg" alt="arrow icon"
-        /></a>
-      </div>
-
-      <div class="slides">
-        <h1>We are available all across the globe</h1>
-        <p>
-          With stores all over the world, it's easy for you to find furniture
-          for your home or place of business. Locally, we’re in most major
-          cities throughout the country. Find the branch nearest you using our
-          store locator. Any questions? Don't hesitate to contact us today.
-        </p>
-
-        <a href="#"
-          >Shop now <img src="./images/icon-arrow.svg" alt="arrow icon"
-        /></a>
-      </div>
-
-      <div class="slides">
-        <h1>Manufactured with the best materials</h1>
-        <p>
-          Our modern furniture store provide a high level of quality. Our
-          company has invested in advanced technology to ensure that every
-          product is made as perfect and as consistent as possible. With three
-          decades of experience in this industry, we understand what customers
-          want for their home and office.
-        </p>
-
-        <a href="#"
-          >Shop now <img src="./images/icon-arrow.svg" alt="arrow icon"
-        /></a>
       </div>
     </section>
 
@@ -124,7 +111,7 @@
         <img src="./images/image-about-dark.jpg" alt="about dark image" />
       </div>
 
-      <div>
+      <div class="about-desc">
         <h3>About our furniture</h3>
         <p>
           Our multifunctional collection blends design and function to suit your

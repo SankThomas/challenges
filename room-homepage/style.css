@@ -18,10 +18,12 @@ a {
 p {
   font-size: 14px;
   color: hsl(0, 0%, 63%);
+  line-height: 1.6;
+  padding: 20px 0;
 }
 
 img {
-  max-width: 110%;
+  max-width: 100%;
 }
 
 body {
@@ -32,60 +34,105 @@ body {
   position: absolute;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 50px;
 }
 
-.header nav {
-  position: relative;
-  display: none;
-  background: #fff;
-  padding: 30px;
-}
-
-.header nav ul {
+.header .navbar ul {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 
-.header nav ul li {
-  margin: 0 10px;
+.header .navbar ul li {
+  margin: 0 20px;
 }
 
-.header nav ul li a {
-  color: #333;
-  font-size: 12px;
-  font-weight: 600;
+.header .navbar ul li a {
+  font-size: 13px;
+  color: #fff;
+  text-transform: lowercase;
 }
 
-.showcase .mobile-img img {
+.showcase .slide {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.showcase .slide img.room {
   width: 100%;
-  height: 400px;
 }
 
-.showcase .mobile-nav {
+.showcase .slide .imgs img {
+  width: 0;
+}
+
+.showcase .slide .imgs img.current {
+  width: 100%;
+}
+
+.showcase .slide > div:first-child {
+  grid-column: 1 / 3;
+}
+
+.showcase .info {
+  position: relative;
+  padding: 150px 60px 0;
+}
+
+.showcase .info h1 {
+  font-size: 36px;
+}
+
+.showcase .info a {
+  margin-right: 30px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.showcase .info .arrows {
   position: absolute;
-  right: 0;
-  background: #000;
-  top: 350px;
-  padding: 10px 0;
+  left: 0;
+  bottom: 19px;
 }
 
-.showcase .mobile-nav div {
-  display: inline-block;
+.showcase .info .arrows img {
+  background-color: #000;
+  padding: 20px 30px;
 }
 
-.showcase .mobile-nav img {
-  padding: 0 10px;
+.showcase .info .arrows img:hover {
+  background-color: #555;
   cursor: pointer;
 }
 
-.showcase .mobile-nav:hover {
-  background: #f1f1f1;
+.showcase .info .arrows img.right {
+  margin-left: -10px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: -25px;
+}
+
+.about img {
+  width: 100%;
+}
+
+.about .about-desc {
+  padding: 50px 40px;
+}
+
+.about .about-desc h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 .attribution {
-  font-size: 11px;
+  padding: 0 0 20px;
+  font-size: 13px;
   text-align: center;
 }
 
