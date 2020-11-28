@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 15px;
+  color: hsl(180, 29%, 50%);
+  padding-bottom: 5px;
+}
+
+h5 {
+  font-size: 15px;
+  color: hsl(180, 14%, 20%);
+  transition: 0.2s;
+}
+
+h5:hover {
+  cursor: pointer;
+  color: hsl(180, 29%, 50%);
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: hsl(180, 52%, 96%);
+}
+
+.header-image {
+  background-color: hsl(180, 29%, 50%);
+}
+
+.job-container {
+  padding: 50px 20px;
+}
+
+.job-container article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  margin: 40px;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px hsl(180, 29%, 50%, 0.2);
+}
+
+.job-container article .avatar {
+  display: flex;
+}
+
+.job-container article div > img {
+  margin-right: 20px;
+  width: 50px;
+}
+
+.job-container article .small {
+  display: flex;
+  margin-top: 5px;
+}
+
+.job-container article .small li {
+  font-size: 13px;
+  color: hsl(180, 8%, 52%);
+  margin-right: 10px;
+}
+
+.job-container article .role {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.job-container article .role li {
+  margin: 10px 10px 0 0;
+  color: hsl(180, 29%, 50%);
+  background-color: hsl(180, 31%, 95%);
+  font-size: 13px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.job-container article .role li:hover {
+  cursor: pointer;
+  background-color: hsl(180, 29%, 50%);
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  .job-container {
+    max-width: 1100px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-image img {
+    width: 1600px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    margin-top: 20px;
+  }
+
+  .job-container article {
+    flex-direction: column;
+    align-items: initial;
+    margin: 40px 10px;
+  }
+
+  .job-container article {
+    position: relative;
+  }
+
+  .job-container article div > img {
+    position: absolute;
+    top: -10%;
+    left: 5%;
+  }
+
+  /* .job-container article .avatar {
+    display: grid;
+    grid-template-columns: 1fr;
+  } */
+
+  .job-container article .small {
+    padding-bottom: 10px;
+  }
+
+  .job-container article .role {
+    border-top: 1px solid hsl(180, 8%, 52%);
+  }
+}

@@ -51,7 +51,7 @@ Your task is to build out the project to the designs inside the `/design` folder
 
 The designs are in JPG static format. This will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. This should help train your eye to perceive differences in spacings and sizes.
 
-If you would like the Sketch file in order to inspect the design in more detail it is available to buy from the challenge page on the platform.
+If you would like the Sketch file in order to inspect the design in more detail you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
 
 You will find all the required assets in the `/images` folder. The assets are already optimized.
 
@@ -67,7 +67,6 @@ Feel free to use any workflow that you feel comfortable with. Below is a suggest
 4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
 5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
 6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
-7. If you'd like to try making your project fully responsive, we'd recommend checking out [Sizzy](https://bit.ly/fm-sizzy). It's a great browser that makes it easy to view your site across multiple devices.
 
 ## Deploying your project
 
@@ -97,6 +96,6 @@ This challenge is completely free. Please share it with anyone who will find it 
 
 A massive thank you to our community sponsors!
 
-- [Contrast](https://bit.ly/fem-contrast) reimagines how developers inspect, collaborate, and build components off Figma designs.
+- [Zero to Mastery](https://bit.ly/fem-ztm) is an incredible learning resource for all things web development. Led by Andrei Neagoie, the courses are really high-quality content and cover a wide range of in-demand skills.
 - [Diversify Tech](https://bit.ly/fem-diversify-tech) is an amazing resource for underrepresented people in tech. The site features job listings for anyone seeking new opportunities. The resource section is also full of useful links to dive into!
-- [Triplebyte](http://bit.ly/fem-triplebyte) can save a lot of time and stress during the job hunting process. Their free, confidential quiz makes it so that companies end up pitching you for their vacant job roles.
+- [Triplebyte](http://bit.ly/fem-triplebyte) is a really nice offering if you're looking for a new role. It's a free service that lets you take a confidential quiz. Based on your results companies will pitch you for their vacant roles!
